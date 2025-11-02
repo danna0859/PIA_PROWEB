@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo #3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>EQUIPO #3</h1>
+    </header>
+    
+    <main>
+        <table id="team-table">
+            <thead>
+                <tr>
+                    <th>Matricula</th>
+                    <th>Nombre</th>
+                    <th>PaginaWeb1</th>
+                    <th>PaginaWeb2</th>
+                    <th>XML</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>123456</td>
+                    <td>Juan Pérez</td>
+                    <td><a href="https://www.ejemplo1.com" target="_blank">Visitar Web1</a></td>
+                    <td><a href="https://www.ejemplo2.com" target="_blank">Visitar Web2</a></td>
+                    <td><button onclick="viewXML(1)">Ver XML</button></td>
+                </tr>
+                <tr>
+                    <td>234567</td>
+                    <td>María García</td>
+                    <td><a href="https://www.mariaweb1.com" target="_blank">Visitar Web1</a></td>
+                    <td><a href="https://www.mariaweb2.com" target="_blank">Visitar Web2</a></td>
+                    <td><button onclick="viewXML(2)">Ver XML</button></td>
+                </tr>
+                <tr>
+                    <td>345678</td>
+                    <td>Carlos López</td>
+                    <td><a href="https://www.carlosweb1.com" target="_blank">Visitar Web1</a></td>
+                    <td><a href="https://www.carlosweb2.com" target="_blank">Visitar Web2</a></td>
+                    <td><button onclick="viewXML(3)">Ver XML</button></td>
+                </tr>
+                <tr>
+                    <td>456789</td>
+                    <td>Ana Rodríguez</td>
+                    <td><a href="https://www.anaweb1.com" target="_blank">Visitar Web1</a></td>
+                    <td><a href="https://www.anaweb2.com" target="_blank">Visitar Web2</a></td>
+                    <td><button onclick="viewXML(4)">Ver XML</button></td>
+                </tr>
+                <tr>
+                    <td>567890</td>
+                    <td>Pedro Martínez</td>
+                    <td><a href="https://www.pedroweb1.com" target="_blank">Visitar Web1</a></td>
+                    <td><a href="https://www.pedroweb2.com" target="_blank">Visitar Web2</a></td>
+                    <td><button onclick="viewXML(5)">Ver XML</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Modal para mostrar XML -->
+    <div id="xmlModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contenido XML</h2>
+            <pre id="xmlContent"></pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
