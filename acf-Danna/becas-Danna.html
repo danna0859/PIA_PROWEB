@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Becas Disponibles - Danna Paola Ruiz Hernández</title>
+    <link rel="stylesheet" href="css/becas-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>BECAS DISPONIBLES</h1>
+        <p>Explora las oportunidades que hay de financiamiento educativo</p>
+    </header>
+
+    <main>
+        <!-- Filtros por Sector -->
+        <section class="filters-section">
+            <h2>Filtrar por Sector</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todas las Becas</button>
+                <button class="filter-btn" data-filter="universidad">Universidad</button>
+                <button class="filter-btn" data-filter="gobierno">Gobierno</button>
+                <button class="filter-btn" data-filter="privado">Sector Privado</button>
+            </div>
+        </section>
+
+        <!-- Sección de Becas Universitarias -->
+        <section class="scholarship-section" data-category="universidad">
+            <div class="section-header">
+                <h2>🏛️ Becas Universitarias</h2>
+                <span class="badge">2 becas</span>
+            </div>
+            
+            <div class="scholarship-cards">
+                <!-- Beca 1 -->
+                <div class="scholarship-card">
+                    <div class="card-header">
+                        <h3>Beca de Alto Promedio en FIME</h3>
+                        <span class="amount">$800 MXN/mes</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="description">Promedio general (Kárdex) mayor o igual a 90 a partir del tercer semestre ya cursado.</p>
+                        <div class="requirements">
+                            <h4>Requisitos:</h4>
+                            <ul>
+                                <li>Promedio mínimo de 90</li>
+                                <li>Materias aprobadas: Todas deben estar aprobadas en ordinario, o tener un máximo de 1 extraordinario.</li>
+                                <li>Semestre: Ser alumno de 5º semestre o cursarlo.</li>
+                            </ul>
+                        </div>
+                        <div class="deadline">
+                            <strong>Fecha límite:</strong> 10 de Junio 2025
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-apply" onclick="applyScholarship('Beca de Alto Promedio en FIME')">Aplicar</button>
+                        <a href="https://www.fime.uanl.mx/tramites/becas-academicas/" target="_blank" class="btn-info">Más información</a>
+                    </div>
+                </div>
+
+                <!-- Beca 2 -->
+                <div class="scholarship-card">
+                    <div class="card-header">
+                        <h3>Beca de Escasos Recursos</h3>
+                        <span class="amount">% descuento otorgado segun nivel</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="description">Apoyo para estudiantes con situación económica desfavorable.</p>
+                        <div class="requirements">
+                            <h4>Requisitos:</h4>
+                            <ul>
+                                <li> No pagar el recibo de servicios escolares y académicos hasta que concluya el trámite de beca de escasos recursos.</li>
+                                <li>Llenar la solicitud en SIASE</li>
+                                <li>Acta de nacimiento del estudiante.</li>
+                                <li>Comprobante de domicilio: recibo de agua, luz, gas o teléfono. Quienes viven en zona irregular y no cuenten con algún comprobante de domicilio podrán presentar la credencial de elector.</li>
+                                <li>Comprobantes de ingresos de padres</li>
+                                <li>En caso de ser casado, el estudiante deberá de anexar el acta de matrimonio y comprobante de ingresos de su nuevo núcleo familiar.</li>
+                                <li>Aquellas otras constancias que se consideren pertinentes para demostrar lo asentado en los formatos de solicitud de beca, por ejemplo: orfandad, viudez, madre soltera, divorcio, separación de padres, enfermedad crónica incapacitante, entre otros.</li>
+                                <li>Escanear los documentos originales en formato PDF y adjuntarlos en forma individual (no fotografías).</li>
+                            </ul>
+                        </div>
+                        <div class="deadline">
+                            <strong>Fecha límite:</strong> 19 de Noviembre 2025
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-apply" onclick="applyScholarship('Beca de Escasos Recursos')">Aplicar</button>
+                        <a href="https://www.uanl.mx/tramites/becas-de-escasos-recursos/" target="_blank" class="btn-info">Más información</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Becas Gubernamentales -->
+        <section class="scholarship-section" data-category="gobierno">
+            <div class="section-header">
+                <h2>🏛️ Becas Gubernamentales</h2>
+                <span class="badge">2 becas</span>
+            </div>
+            
+            <div class="scholarship-cards">
+                <!-- Beca 1 -->
+                <div class="scholarship-card">
+                    <div class="card-header">
+                        <h3>Beca Jóvenes Escribiendo el Futuro</h3>
+                        <span class="amount">$5,800 MXN/bimestrales</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="description">Estudiantes de licenciatura, ingeniería y técnico superior universitario en instituciones públicas. </p>
+                        <div class="requirements">
+                            <h4>Requisitos:</h4>
+                            <ul>
+                                <li>Ser estudiante de licenciatura</li>
+                                <li>No recibir otra beca federal</li>
+                                <li>Registro en padrón de beneficiarios</li>
+                                <li>Comprobante de estudios vigente</li>
+                                <li>Identificación oficial</li>
+                            </ul>
+                        </div>
+                        <div class="deadline">
+                            <strong>Fecha límite:</strong> 1 al 15 de octubre de 2025
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-apply" onclick="applyScholarship('Beca Benito Juárez')">Aplicar</button>
+                        <a href="https://www.gob.mx/becasbenitojuarez/articulos/conoce-todo-sobre-la-beca-jovenes-escribiendo-el-futuro" target="_blank" class="btn-info">Más información</a>
+                    </div>
+                </div>
+
+                <!-- Beca 2 -->
+                <div class="scholarship-card">
+                    <div class="card-header">
+                        <h3>Jóvenes Escribiendo el Futuro</h3>
+                        <span class="amount">$2,550 MXN/mes</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="description">Beca para estudiantes en localidades de alta marginación.</p>
+                        <div class="requirements">
+                            <h4>Requisitos:</h4>
+                            <ul>
+                                <li>Estudiar en universidad pública</li>
+                                <li>No tener título profesional previo</li>
+                                <li>Edad entre 18-29 años</li>
+                                <li>Residir en localidad marginada</li>
+                                <li>Promedio mínimo de 8.0</li>
+                            </ul>
+                        </div>
+                        <div class="deadline">
+                            <strong>Fecha límite:</strong> 10 de Octubre 2024
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-apply" onclick="applyScholarship('Jóvenes Escribiendo el Futuro')">Aplicar</button>
+                        <a href="https://www.gob.mx/jovenesconstruyendoelfuturo" target="_blank" class="btn-info">Más información</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Becas del Sector Privado -->
+        <section class="scholarship-section" data-category="privado">
+            <div class="section-header">
+                <h2>🏢 Becas Sector Privado</h2>
+                <span class="badge">2 becas</span>
+            </div>
+            
+            <div class="scholarship-cards">
+                <!-- Beca 1 -->
+                <div class="scholarship-card">
+                    <div class="card-header">
+                        <h3>Beca Fundación Telmex</h3>
+                        <span class="amount">100% colegiatura + mensualidad</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="description">Beca integral para estudiantes destacados en carreras tecnológicas.</p>
+                        <div class="requirements">
+                            <h4>Requisitos:</h4>
+                            <ul>
+                                <li>Promedio mínimo de 95</li>
+                                <li>Carrera en áreas STEM</li>
+                                <li>Compromiso social demostrable</li>
+                                <li>Proyecto de impacto comunitario</li>
+                                <li>Entrevista con fundación</li>
+                            </ul>
+                        </div>
+                        <div class="deadline">
+                            <strong>Fecha límite:</strong> 5 de Agosto 2024
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-apply" onclick="applyScholarship('Beca Fundación Telmex')">Aplicar</button>
+                        <a href="https://fundaciontelmextelcel.org/becas/" target="_blank" class="btn-info">Más información</a>
+                    </div>
+                </div>
+
+                <!-- Beca 2 -->
+                <div class="scholarship-card">
+                    <div class="card-header">
+                        <h3>Beca Google for Education</h3>
+                        <span class="amount">$10,000 USD + mentoría</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="description">Beca para estudiantes destacados en tecnología y desarrollo de software.</p>
+                        <div class="requirements">
+                            <h4>Requisitos:</h4>
+                            <ul>
+                                <li>Portafolio de proyectos técnicos</li>
+                                <li>Promedio mínimo de 90</li>
+                                <li>Conocimiento en programación</li>
+                                <li>Ensayo sobre innovación tecnológica</li>
+                                <li>Video de presentación</li>
+                            </ul>
+                        </div>
+                        <div class="deadline">
+                            <strong>Fecha límite:</strong> 25 de Agosto 2024
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-apply" onclick="applyScholarship('Beca Google for Education')">Aplicar</button>
+                        <a href="https://edu.google.com/scholarships/" target="_blank" class="btn-info">Más información</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/becas-script.js"></script>
+</body>
+</html>
