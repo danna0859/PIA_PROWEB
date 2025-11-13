@@ -7,7 +7,7 @@ const becas = [
     { 
         nombre: "Beca Santander Media Manutención 2025", 
         sector: "Privado", 
-        requisitos: "Promedio ≥ 8.0 | Semestre ≥ 1 | Manutención mensual", 
+        requisitos: "Promedio ≥ 8.0 | Semestre ≥ 1 ", 
         imagen: "images/santander.jpg", 
         enlace: "https://app.santanderopenacademy.com/es/program/media-manutencion-2025", 
         minPromedio: 8.0, 
@@ -16,7 +16,7 @@ const becas = [
     { 
         nombre: "Becas TELMEX - Fundación Telmex Telcel", 
         sector: "Privado", 
-        requisitos: "Promedio ≥ 9.0 | Semestre ≥ 1 | Excelencia + laptop", 
+        requisitos: "Promedio ≥ 9.0 | Semestre ≥ 1 | Excelencia | En los beneficios incluye una laptop", 
         imagen: "images/telmex.jpg", 
         enlace: "https://www.fundaciontelmextelcel.org/becas", 
         minPromedio: 9.0, 
