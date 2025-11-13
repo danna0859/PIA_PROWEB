@@ -1,0 +1,115 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6;
+    color: #374151;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e40af;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 100px;
+    /* Ajusta según el tamaño de tus logos */
+    height: auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+}
+
+nav {
+    background-color: #4b5563;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    max-width: none;
+    margin: 0 auto;
+}
+
+#pw1,
+#pw2 {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.trajectory-item {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.trajectory-item img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.trajectory-item h3 {
+    color: #1e40af;
+    margin-bottom: 10px;
+}
+
+.trajectory-item p {
+    margin: 5px 0;
+}
+
+#hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.hobby-item {
+    text-align: center;
+    width: 200px;
+}
+
+.hobby-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1e40af;
+    color: white;
+    width: 100%;
+}
