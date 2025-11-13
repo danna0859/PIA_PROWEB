@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+    color: #2d3748;
+    line-height: 1.7;
+}
+
+header {
+    background: #1e40af;
+    color: white;
+    padding: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header .logo {
+    width: 70px;
+    height: auto;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 1.55rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+nav {
+    background: #1e3a8a;
+    padding: 14px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #93c5fd;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 0 18px;
+}
+
+section {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    margin-bottom: 35px;
+}
+
+h2 {
+    color: #1e40af;
+    font-size: 1.9rem;
+    margin-bottom: 22px;
+    border-bottom: 3px solid #dbeafe;
+    padding-bottom: 12px;
+}
+
+.perfil-card {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 18px;
+    background: #f8fafc;
+    border-radius: 12px;
+}
+
+.foto-perfil {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #1e40af;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.perfil-card p {
+    margin: 8px 0;
+    font-size: 1.05rem;
+}
+
+.botones {
+    text-align: center;
+    margin: 28px 0;
+}
+
+button {
+    background: #1e40af;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    margin: 0 14px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 5px 12px rgba(30,64,175,0.3);
+}
+
+button:hover {
+    background: #1e3a8a;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(30,64,175,0.4);
+}
+
+.beca-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 22px;
+    margin-bottom: 25px;
+    background: #fafbff;
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+    transition: 0.3s;
+}
+
+.beca-card:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transform: translateY(-3px);
+}
+
+.beca-card img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #e2e8f0;
+}
+
+.beca-info h3 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+    font-size: 1.35rem;
+}
+
+.beca-info p {
+    margin: 8px 0;
+    font-size: 0.98rem;
+}
+
+.beca-info a {
+    display: inline-block;
+    margin-top: 14px;
+    color: #1e40af;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    background: #dbeafe;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.beca-info a:hover {
+    background: #bfdbfe;
+    transform: scale(1.05);
+}
+
+.mensaje {
+    padding: 12px;
+    border-radius: 10px;
+    margin: 12px 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+.aprobado {
+    background: #d1fae5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+
+.rechazado {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fca5a5;
+}
+
+#resultado-evaluacion {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.15rem;
+}
+
+footer {
+    text-align: center;
+    padding: 22px;
+    background: #1e40af;
+    color: white;
+    margin-top: 45px;
+    font-size: 0.95rem;
+}
