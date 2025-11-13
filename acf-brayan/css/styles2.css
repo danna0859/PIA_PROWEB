@@ -12,50 +12,48 @@ body {
 }
 
 header {
-    background: #1e40af;
+    background-color: #1e40af;
     color: white;
-    padding: 22px;
+    text-align: center;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 header .logo {
-    width: 70px;
+    width: 100px;
     height: auto;
-    border-radius: 8px;
 }
 
 header h1 {
-    font-size: 1.55rem;
     margin: 0;
+    font-size: 1.8rem;
 }
 
 header p {
-    font-size: 0.95rem;
-    opacity: 0.9;
+    margin: 5px 0 0;
+    font-size: 1rem;
 }
 
+
 nav {
-    background: #1e3a8a;
-    padding: 14px;
+    background-color: #4b5563;
+    padding: 10px;
     text-align: center;
 }
 
 nav a {
     color: white;
-    margin: 0 25px;
+    margin: 0 15px;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 1.05rem;
+    font-weight: bold;
 }
 
 nav a:hover {
     text-decoration: underline;
-    color: #93c5fd;
 }
+
 
 .container {
     max-width: 1100px;
