@@ -10,21 +10,10 @@
 <body>
     <header>
         <h1>BECAS DISPONIBLES</h1>
-        <p>Explora las oportunidades de financiamiento educativo</p>
+        <p>Explora las oportunidades que hay de financiamiento educativo</p>
     </header>
 
     <main>
-        <!-- Sección de Alertas Personalizadas -->
-        <section class="alerts-section">
-            <div class="alert-card" id="personalized-alert">
-                <h2>📊 Mis Becas Disponibles</h2>
-                <div class="alert-content">
-                    <p id="alert-message">Calculando becas a las que puedes aplicar...</p>
-                    <button class="btn-primary" onclick="calculateEligibleScholarships()">Verificar Elegibilidad</button>
-                </div>
-            </div>
-        </section>
-
         <!-- Filtros por Sector -->
         <section class="filters-section">
             <h2>Filtrar por Sector</h2>
@@ -96,7 +85,7 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <button class="btn-apply" onclick="applyScholarship('Beca de Apoyo Económico')">Aplicar</button>
+                        <button class="btn-apply" onclick="applyScholarship('Beca de Escasos Recursos')">Aplicar</button>
                         <a href="https://www.uanl.mx/tramites/becas-de-escasos-recursos/" target="_blank" class="btn-info">Más información</a>
                     </div>
                 </div>
@@ -114,11 +103,11 @@
                 <!-- Beca 1 -->
                 <div class="scholarship-card">
                     <div class="card-header">
-                        <h3>Beca Benito Juárez</h3>
-                        <span class="amount">$2,450 MXN/mes</span>
+                        <h3>Beca Jóvenes Escribiendo el Futuro</h3>
+                        <span class="amount">$5,800 MXN/bimestrales</span>
                     </div>
                     <div class="card-body">
-                        <p class="description">Programa de apoyo a estudiantes de educación superior en situación vulnerable.</p>
+                        <p class="description">Estudiantes de licenciatura, ingeniería y técnico superior universitario en instituciones públicas. </p>
                         <div class="requirements">
                             <h4>Requisitos:</h4>
                             <ul>
@@ -130,12 +119,12 @@
                             </ul>
                         </div>
                         <div class="deadline">
-                            <strong>Fecha límite:</strong> 20 de Septiembre 2024
+                            <strong>Fecha límite:</strong> 1 al 15 de octubre de 2025
                         </div>
                     </div>
                     <div class="card-footer">
                         <button class="btn-apply" onclick="applyScholarship('Beca Benito Juárez')">Aplicar</button>
-                        <a href="https://www.gob.mx/becasbenitojuarez" target="_blank" class="btn-info">Más información</a>
+                        <a href="https://www.gob.mx/becasbenitojuarez/articulos/conoce-todo-sobre-la-beca-jovenes-escribiendo-el-futuro" target="_blank" class="btn-info">Más información</a>
                     </div>
                 </div>
 
@@ -235,23 +224,6 @@
             </div>
         </section>
     </main>
-
-    <!-- Modal para aplicación -->
-    <div id="applicationModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 id="modalTitle">Aplicar a Beca</h2>
-            <div id="modalMessage">
-                <p>¿Estás seguro que deseas aplicar a esta beca?</p>
-                <p>Serás redirigido al formulario oficial de aplicación.</p>
-            </div>
-            <div class="modal-actions">
-                <button class="btn-cancel" onclick="closeModal()">Cancelar</button>
-                <button class="btn-confirm" onclick="redirectToApplication()">Continuar</button>
-            </div>
-        </div>
-    </div>
-
     <script src="js/becas-script.js"></script>
 </body>
 </html>

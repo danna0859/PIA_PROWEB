@@ -1,4 +1,4 @@
-/* Estilos para la página de becas */
+/* Estilos para la página de becas - Versión simplificada */
 * {
     margin: 0;
     padding: 0;
@@ -36,54 +36,6 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 30px 20px;
-}
-
-/* Alert Section */
-.alerts-section {
-    margin-bottom: 40px;
-}
-
-.alert-card {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-    color: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
-}
-
-.alert-card h2 {
-    margin-bottom: 15px;
-    font-size: 1.5rem;
-}
-
-.alert-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-#alert-message {
-    flex: 1;
-    font-size: 1.1rem;
-}
-
-/* Buttons */
-.btn-primary {
-    background: white;
-    color: #059669;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
 }
 
 /* Filters */
@@ -342,11 +294,6 @@ main {
 @media (max-width: 768px) {
     .scholarship-cards {
         grid-template-columns: 1fr;
-    }
-    
-    .alert-content {
-        flex-direction: column;
-        align-items: stretch;
     }
     
     .card-header {
