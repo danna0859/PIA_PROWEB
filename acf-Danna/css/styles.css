@@ -1,0 +1,229 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6; /* Gris claro elegante */
+    color: #374151;
+    line-height: 1.6;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #1e40af; /* Azul sólido, sin gradiente */
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilos del contenido principal */
+main {
+    max-width: none; /* Extendido al máximo */
+    margin: 0 auto;
+    padding: 40px 10px; /* Padding lateral mínimo para casi al límite */
+}
+
+/* Secciones */
+#team-info, #team-presentations {
+    background-color: white;
+    padding: 15px; /* Reducido para más amplitud */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+    width: 100%; /* Full width */
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #1e40af; /* Azul elegante */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilos de la tabla */
+#team-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #d1d5db; /* Gris medio para bordes */
+}
+
+th {
+    background-color: #4b5563; /* Gris azulado moderno */
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9fafb; /* Gris muy claro */
+}
+
+tr:hover {
+    background-color: #dbeafe; /* Azul grisáceo suave para hover */
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos de los enlaces */
+a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+/* Estilos de los botones */
+button {
+    background-color: #1e40af; /* Azul profundo elegante */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e3a8a;
+}
+
+/* Estilos de la sección de presentaciones */
+.presentations-container {
+    display: flex;
+    flex-direction: column; /* Vertical por defecto, como lista hacia abajo */
+    gap: 20px;
+    align-items: stretch; /* Extiende las cards al ancho completo */
+    width: 100%;
+}
+
+.presentation-card {
+    background-color: #f9fafb; /* Gris claro para cards */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    width: 100%; /* Full width para extender al límite */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.presentation-card:hover {
+    transform: translateY(-5px);
+}
+
+.presentation-card h3 {
+    font-size: 1.4rem;
+    color: #1e40af;
+    margin-bottom: 10px;
+}
+
+.presentation-card p {
+    font-size: 1rem;
+    color: #6b7280; /* Gris medio para texto secundario */
+    margin-bottom: 15px;
+}
+
+.presentation-card a {
+    display: inline-block;
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.presentation-card a:hover {
+    background-color: #1d4ed8;
+    text-decoration: none;
+}
+
+/* Estilos del modal (mantenido) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 700px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.close {
+    color: #9ca3af;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #374151;
+}
+
+#xmlContent {
+    background-color: #f3f4f6;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 15px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    font-family: 'Courier New', monospace;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        padding: 40px 5px; /* Aún más ajustado en móvil */
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+    
+    th, td {
+        padding: 10px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+}
