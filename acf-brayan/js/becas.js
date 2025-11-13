@@ -1,5 +1,5 @@
 const MIS_DATOS = {
-    semestre: 5,
+    semestre: 6,
     promedio: 8.2
 };
 
