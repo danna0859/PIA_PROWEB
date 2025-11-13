@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intercambio_academico>
+
+  <informacion_general>
+    <nombre>Brayan López Guzmán</nombre>
+    <matricula>20204567</matricula>
+    <facultad>Facultad de Ingeniería Mecánica y Eléctrica (FIME)</facultad>
+    <carrera>Ingeniero Administrador en Sistemas (IAS)</carrera>
+    <universidad>Universidad Autónoma de Nuevo León (UANL)</universidad>
+  </informacion_general>
+
+  <descripcion>
+    <parrafo>
+      La carrera de Ingeniero Administrador en Sistemas (IAS) forma profesionales capaces de integrar los conocimientos de la administración con la tecnología de la información.
+      Su objetivo es optimizar los procesos empresariales mediante el uso eficiente de los recursos informáticos, la gestión de datos y la planeación estratégica.
+      El egresado puede desempeñarse en áreas de desarrollo de sistemas, gestión de proyectos tecnológicos, análisis de información y dirección de equipos multidisciplinarios.
+    </parrafo>
+  </descripcion>
+
+  <intercambio_nacional>
+    <universidad>
+      <nombre>Universidad Nacional Autónoma de México (UNAM)</nombre>
+      <pais>México</pais>
+      <descripcion>
+        La UNAM es una de las instituciones públicas más reconocidas de América Latina.
+        Ofrece oportunidades de movilidad nacional con un enfoque en investigación, innovación y formación integral.
+        Los alumnos pueden cursar materias equivalentes y fortalecer sus competencias académicas y profesionales.
+      </descripcion>
+      <requisitos>
+        <req>Ser estudiante regular de FIME-UANL.</req>
+        <req>Promedio mínimo de 85.</req>
+        <req>Haber cursado al menos el 50% de los créditos de la carrera.</req>
+        <req>Nivel mínimo B1 de inglés.</req>
+      </requisitos>
+      <beneficios>
+        <beneficio>Apoyo económico de movilidad nacional.</beneficio>
+        <beneficio>Reconocimiento de materias cursadas.</beneficio>
+        <beneficio>Experiencia académica en una universidad de alto nivel.</beneficio>
+      </beneficios>
+    </universidad>
+  </intercambio_nacional>
+
+  <intercambio_internacional>
+    <universidad>
+      <nombre>University of Toronto</nombre>
+      <pais>Canadá</pais>
+      <descripcion>
+        La University of Toronto es una de las universidades más prestigiosas de Norteamérica.
+        Se distingue por su investigación, programas en ingeniería, gestión y tecnología aplicada.
+        Ofrece intercambios académicos con asesoría personalizada y oportunidades de becas para estudiantes de sistemas y administración tecnológica.
+      </descripcion>
+      <requisitos>
+        <req>Ser alumno activo de la UANL.</req>
+        <req>Promedio mínimo de 90.</req>
+        <req>Dominio del idioma inglés (TOEFL mínimo 90 puntos o IELTS equivalente).</req>
+        <req>Carta de recomendación académica.</req>
+      </requisitos>
+      <beneficios>
+        <beneficio>Beca parcial durante la estancia.</beneficio>
+        <beneficio>Asesoría académica personalizada.</beneficio>
+        <beneficio>Acceso a programas de investigación y desarrollo empresarial internacional.</beneficio>
+      </beneficios>
+    </universidad>
+
+    <universidad>
+      <nombre>Technical University of Munich (TUM)</nombre>
+      <pais>Alemania</pais>
+      <descripcion>
+        La TUM es una universidad líder en ingeniería, administración tecnológica y ciencias aplicadas.
+        Es reconocida mundialmente por su innovación, colaboración con la industria y programas de intercambio para estudiantes extranjeros.
+        Promueve el desarrollo profesional, cultural y académico de sus participantes mediante experiencias internacionales.
+      </descripcion>
+      <requisitos>
+        <req>Estar inscrito en FIME-UANL.</req>
+        <req>Promedio mínimo de 85.</req>
+        <req>Nivel mínimo B2 de inglés o alemán.</req>
+        <req>Carta de motivos y aprobación del coordinador de intercambio.</req>
+      </requisitos>
+      <beneficios>
+        <beneficio>Oportunidad de cursar materias equivalentes.</beneficio>
+        <beneficio>Acceso a laboratorios y proyectos internacionales.</beneficio>
+        <beneficio>Experiencia académica y cultural en Europa.</beneficio>
+      </beneficios>
+    </universidad>
+  </intercambio_internacional>
+
+  <autor>
+    <nombre>Brayan López Guzmán</nombre>
+    <anio>2025</anio>
+  </autor>
+
+</intercambio_academico>
