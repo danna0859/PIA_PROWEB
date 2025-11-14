@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACT F#2 - Individual</title>
+  <style>
+  
+  body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: linear-gradient(135deg, #f9fafb, #e5e7eb);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+header {
+  width: 100%;
+  text-align: center;
+  background: #1e3a8a; /* azul petróleo */
+  color: white;
+  padding: 25px 0;
+  font-size: 1.8em;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeDown 1s ease forwards;
+}
+
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* <-- Centra todo el contenido dentro del main */
+}
+
+
+.tarjeta {
+  background: white;
+  border: 2px solid #1e3a8a;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.25);
+  border-color: #10b981;
+}
+
+
+ .nombre {
+  background-color: white;
+  border: 2px solid #1e3a8a;
+  border-radius: 12px;
+  padding: 18px 50px;
+  cursor: pointer;
+  font-size: 1.3em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin-top: 40px;
+  font-weight: 600;
+  color: #1e3a8a;
+  transition: all 0.3s ease;
+  animation: fadeUp 1.2s ease forwards;
+}
+
+.nombre:hover {
+  background-color: #1e3a8a;
+  color: white;
+  transform: scale(1.05);
+}
+
+
+.perfil {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+  max-width: 600px;
+  width: 90%;
+  transition: transform 0.3s ease;
+  text-align: center; /* <-- Centra el texto dentro del perfil */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* <-- Centra horizontalmente la imagen y texto */
+  justify-content: center; /* <-- Centra verticalmente si hay más contenido */
+}
+
+.perfil:hover {
+  transform: scale(1.02);
+}
+
+.perfil img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #6c757d;
+  margin-bottom: 15px;
+}
+
+.perfil h1 {
+  margin: 10px 0;
+  color: #212529;
+}
+
+.perfil p {
+  font-size: 1em;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+
+#menu {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 20px 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  animation: fadeIn 0.8s ease;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 15px 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  background-color: #10b981;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+a:hover {
+  background-color: #059669;
+  transform: scale(1.07);
+}
+
+
+.oculto {
+  display: none;
+}
+
+.seccion {
+  background: white;
+  margin: 60px auto;
+  padding: 40px;
+  width: 85%;
+  max-width: 900px;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+  animation: fadeIn 0.8s ease;
+}
+
+.seccion h1, .seccion h2 {
+  color: #1f2937;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+li {
+  line-height: 1.7;
+  text-align: justify;
+  color: #333;
+  font-size: 1em;
+}
+
+b {
+  color: #1e3a8a;
+  font-size: 1.1em;
+}
+
+img {
+  border-radius: 12px;
+  margin-top: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+
+.volver {
+  margin-top: 30px;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+.volver:hover {
+  background-color: #10b981;
+  transform: scale(1.05);
+}
+
+@keyframes alertFade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.contenedor-boton {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  margin-top: 20px;
+}
+
+.boton-aplicar {
+  background-color: #0ea5e9; /* azul brillante */
+  color: white;
+  border: none;
+  padding: 15px 40px; /* más grande */
+  border-radius: 12px;
+  font-size: 18px; /* texto más grande */
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-aplicar:hover {
+  background-color: #0284c7; /* tono más oscuro al pasar el mouse */
+  transform: scale(1.08);
+}
+
+  </style>
+</head>
+<body onload="bienvenida()">
+
+  <header>Reporte de Becas - Alexis Francisco Mendoza Vázquez</header>
+
+  <main id="principal">
+    <div class="perfil">
+      <img src="WhatsApp Image 2024-09-20 at 3.23.40 PM.jpeg" alt="Foto de perfil">
+      <h1>Datos Personales</h1>
+        <p><b>Nombre:</b> Alexis Francisco Mendoza Vázquez</p>
+        <p><b>Matrícula:</b> 2107087</p>
+        <p><b>Carrera:</b> Ingeniería en Tecnologías de Software</p>
+        <p><b>Semestre:</b> Quinto semestre</p>
+        <p><b>Promedio(Actual):</b> 79</p>
+      <button class="nombre" onclick="mostrarMenu()">Da clic para ingresar</button>
+
+
+      <div id="menu" class="oculto">
+        <ul>
+          <li><a href="#" onclick="abrirSeccion('becas-universitarias')">Becas Universitarias</a></li>
+          <li><a href="#" onclick="abrirSeccion('becas-privadas')">Becas de Sector Privado</a></li>
+          <li><a href="#" onclick="abrirSeccion('becas-gobierno')">Becas de Gobierno</a></li>
+        </ul>
+        <button class="volver" onclick="regresar()">Regresar</button>
+      </div>
+    </div>
+  </main>
+  <!-- SECCIONES -->
+  <section id="becas-universitarias" class="seccion oculto">
+    <h1>Becas Universitarias</h1>
+     <div class="tarjeta">
+       <h2>Beca de aprovechamiento academico</h2>
+       <h3>Descripcion</h3>
+         <p>La Beca de Promedio de Calificación es un apoyo económico ofrecido por la Universidad Autónoma de Nuevo León (UANL), dirigido a estudiantes con excelente desempeño académico. Su principal objetivo es reconocer y premiar el esfuerzo y dedicación de los alumnos que han mantenido un alto rendimiento durante sus estudios.</p>
+      <p><b>Tipo de beca:</b> Economica</p>
+      <p><b>Requisitos:</b></p>
+      <ul>
+        <li>•Ser estudiante regular de la UANL</li>
+        <li>•No haber reprobado materias</li>
+        <li>•Tener promedio mínimo de 85</li>
+        <li>•Cumplir con la carga académica completa</li>
+      </ul>
+      <p><b>Institucion:</b> Universidad Autonoma de Nuevo León</p>
+      <img src="https://www.uanl.mx/wp-content/uploads/2018/10/85-aniversario-uanl-torre-rectoria.jpg" alt="Foto de cantantes" style="width: 300px;">
+      <p><b>Link:</b><a href="https://www.uanl.mx/tramites/becas-academicas"_blank"> SITIO OFICIAL </a></p>
+      </div>
+
+       <div class="tarjeta">
+       <h2>Beca Líderes del Mañana</h2>
+       <h3>Descripcion</h3>
+         <p>La Beca Líderes del Mañana es uno de los programas más prestigiosos del Tec de Monterrey. Está dirigida a jóvenes con talento académico sobresaliente, liderazgo social comprobado y necesidad económica total, que desean cursar una carrera profesional completa dentro de la universidad. El programa cubre el 100 % de la colegiatura durante toda la carrera y además ofrece acompañamiento formativo, acceso a mentores, talleres de liderazgo, y la posibilidad de participar en proyectos de impacto social y comunitario.</p>
+      <p><b>Tipo de beca:</b> Economica</p>
+      <p><b>Requisitos:</b></p>
+      <ul>
+        <li>•Promedio mínimo de 90 en preparatoria</li>
+        <li>•Necesidad económica comprobada</li>
+        <li>•Participación activa en proyectos sociales, comunitarios o ambientales.</li>
+        <li>•Superar el proceso de admisión del Tec y las etapas de selección específicas del programa</li>
+      </ul>
+      <p><b>Institucion:</b>Tecnológico de Monterrey</p>
+      <img src="https://prepanet.tec.mx/sites/g/files/vgjovo1001/files/Tec%20de%20Monterrey.jpg" alt="Foto de cantantes" style="width: 300px;">
+      <p><b>Link:</b><a href="https://lideresdelmanana.tec.mx" target="_blank"> SITIO OFICIAL </a></p>
+      </div>
+
+       <div class="tarjeta">
+       <h2>Beca Talento Deportivo</h2>
+       <h3>Descripcion</h3>
+         <p>La Beca Talento Deportivo es un apoyo económico otorgado por la UDEM a estudiantes que tienen un alto desempeño deportivo y desean cursar una carrera profesional en la institución, al mismo tiempo que participan en los equipos deportivos representativos de la universidad.</p>
+      <p><b>Tipo de beca:</b> Deportiva</p>
+      <p><b>Requisitos:</b></p>
+      <ul>
+        <li>•Debes estar admitido como estudiante de nuevo ingreso en UDEM.</li>
+        <li>•Tener alto nivel deportivo y logros relevantes en tu disciplina que demuestren tu talento deportivo.</li>
+        <li>•Ser candidato o estar aceptado para integrar el equipo deportivo representativo de UDEM en la disciplina correspondiente.</li>
+        <li>•Completar el proceso de solicitud de la beca dentro de los plazos establecidos</li>
+      </ul>
+      <p><b>Institucion:</b>Universidad de Monterrey</p>
+      <img src="https://www.udem.edu.mx/sites/default/files/inline-images/Acceso-UDEM_0.jpg" alt="Foto de cantantes" style="width: 300px;">
+      <p><b>Link:</b><a href="https://www.udem.edu.mx/es/admisiones-y-becas/beca-deportiva"_blank"> SITIO OFICIAL </a></p>
+      </div>
+<div class="tarjeta">
+       <h2>Verificacion de aptitud de Beca</h2>
+       <div class="contenedor-boton">
+  <button class="boton-aplicar" onclick="mensajeBeca1()">Da clic para verificar a que beca eres apto</button>
+</div>
+
+</div>
+    <button class="volver" onclick="regresar()">Regresar</button>
+  </section>
+
+  <section id="becas-privadas" class="seccion oculto"> 
+    <h1>Becas de Sector Privado</h1>
+     <div class="tarjeta">
+       <h2>Beca de Apadrinamiento</h2>
+       <h3>Descripcion</h3>
+         <p>Es un apoyo económico ofrecido por Fundación UANL A.C., en colaboración con empresas, benefactores privados u organizaciones de la sociedad civil, para estudiantes de la Universidad Autónoma de Nuevo León que tengan alto desempeño académico y recursos económicos limitados. Permite que un benefactor o empresa particular “apadrine” a uno o varios estudiantes, cubriendo costos como transporte, alimentación, cuotas, materiales escolares, etc., para que puedan continuar sus estudios sin que la situación económica se lo impida.</p>
+      <p><b>Tipo de beca:</b> Economica</p>
+      <p><b>Requisitos:</b></p>
+      <ul>
+        <li>•No tener adeudos académicos o administrativos según lo señalado por la UANL</li>
+        <li>•Presentar la documentación requerida: acta de nacimiento, comprobante de domicilio, comprobantes de ingresos de la familia u otros que prueben la situación económica.</li>
+        <li>•Ser alumno regular de la UANL</li>
+        <li>•Haber obtenido un promedio mínimo y no tener materias en tercera oportunidad en el último semestre cursado.</li>
+      </ul>
+      <p><b>Institucion:</b> Universidad Autonoma de Nuevo León</p>
+      <img src="https://playersoflife.com/wp-content/uploads/2025/05/Cover-27.jpg" alt="Foto de cantantes" style="width: 300px;">
+      <p><b>Link:</b><a href="https://www.uanl.mx/tramites/becas-fundacion-uanl"_blank"> SITIO OFICIAL </a></p>
+      </div>
+
+<div class="tarjeta">
+  <h2>Beca Santander Apoyo a la Manutención 2025</h2>
+       <h3>Descripcion</h3>
+         <p>Está diseñada para contribuir al fortalecimiento de la trayectoria académica de estudiantes mediante un apoyo económico único que les permita continuar sus estudios, reducir barreras económicas y fomentar su desarrollo profesional.</p>
+      <p><b>Tipo de beca:</b> Beca de apoyo economico</p>
+      <p><b>Requisitos:</b></p>
+      <ul>
+        <li>•Ser joven mayor de 16 años cumplidos.</li>
+        <li>•Estar inscrito en un programa de educación superior técnica, licenciatura, maestría o doctorado, en una institución pública o privada en México</li>
+        <li>•Mantener el rendimiento académico durante la carrera</li>
+        <li>•Ser estudiante regular en su programa de estudios</li>
+      </ul>
+      <p><b>Institucion:</b> Santander</p>
+      <img src="https://centrosantafe.com.mx/cdn/shop/files/376.png?v=9702320089011248641" alt="Foto de cantantes" style="width: 300px;">
+      <p><b>Link:</b><a href="https://app.santanderopenacademy.com/es/program/media-manutencion-2025"_blank"> SITIO OFICIAL </a></p>
+</div>
+<div class="tarjeta">
+       <h2>Verificacion de aptitud de Beca</h2>
+       <div class="contenedor-boton">
+  <button class="boton-aplicar" onclick="mensajeBeca2()">Da clic para verificar a que beca eres apto</button>
+</div>
+
+</div>
+    <button class="volver" onclick="regresar()">Regresar</button>
+  </section>
+
+ <section id="becas-gobierno" class="seccion oculto"> 
+   <h1>Becas de Gobierno</h1>
+     <div class="tarjeta">
+       <h2>Beca de Benito Juarez</h2>
+       <h3>Descripcion</h3>
+         <p>Las Becas Benito Juárez son un programa federal creado por el Gobierno de México para apoyar la permanencia y conclusión de estudios de niñas, niños y jóvenes en situación de vulnerabilidad. Su objetivo principal es garantizar el derecho a la educación y reducir la deserción escolar en todos los niveles educativos, desde educación básica hasta superior.</p>
+      <p><b>Tipo de beca:</b> Economica</p>
+      <p><b>Requisitos:</b></p>
+      <ul>
+        <li>•Ser alumno regular inscrito en una escuela pública de nivel medio superior</li>
+        <li>•No estar inscrito en una escuela privada.</li>
+        <li>•No recibir otra beca educativa federal del mismo nivel.</li>
+        <li>•Tener CURP vigente</li>
+      </ul>
+      <p><b>Institucion:</b>Coordinación Nacional de Becas para el Bienestar Benito Juárez</p>
+      <img src="https://www.gob.mx/cms/uploads/article/main_image/77156/destacada_becas-coordinaci_n.jpg" alt="Foto de cantantes" style="width: 300px;">
+      <p><b>Link:</b><a href="https://www.gob.mx/becasbenitojuarez/es/articulos/conoce-todo-sobre-la-beca-universal-de-educacion-media-superior-benito-juarez"_blank"> SITIO OFICIAL </a></p>
+      </div>
+
+      <div class="tarjeta">
+       <h2>Jovenes Escribiendo el Futuro</h2>
+       <h3>Descripcion</h3>
+         <p>La Beca Jóvenes Escribiendo el Futuro es un programa del Gobierno de México, implementado por la Coordinación Nacional de Becas para el Bienestar Benito Juárez. Su objetivo principal es apoyar a estudiantes universitarios de bajos recursos económicos para que puedan continuar y concluir sus estudios de educación superior. Esta beca está dirigida especialmente a estudiantes que cursan en instituciones públicas de educación superior, ubicadas en zonas de alta o muy alta marginación, así como a jóvenes indígenas o afrodescendientes.</p>
+      <p><b>Tipo de beca:</b> Manutención</p>
+      <p><b>Requisitos:</b></p>
+      <ul>
+        <li>•Estar inscrito en una institución pública de educación superior</li>
+        <li>•Pertenecer a una familia con bajos recursos económicos</li>
+        <li>•Tener prioridad si perteneces a comunidades indígenas</li>
+        <li>•Tener CURP y documentación oficial vigente.</li>
+      </ul>
+      <p><b>Institucion:</b>Coordinación Nacional de Becas para el Bienestar Benito Juárez</p>
+      <img src="https://www.itesloscabos.edu.mx/wp-content/uploads/2023/09/jovenes-escribiendo-el-futuro-2023.png" alt="Foto de cantantes" style="width: 300px;">
+      <p><b>Link:</b><a href="https://www.gob.mx/becasbenitojuarez/articulos/conoce-todo-sobre-la-beca-jovenes-escribiendo-el-futuro"_blank"> SITIO OFICIAL </a></p>
+      </div>
+
+ <div class="tarjeta">
+       <h2>Beca en Instituciones Educativas Particulares de Educación Básica y Especial (Nuevo León):</h2>
+       <h3>Descripcion</h3>
+         <p>Este programa es impulsado por el gobierno del estado de Nuevo León, a través de su Secretaría de Educación de Nuevo León y el Centro Estatal de Becas BECALEÓN, y está dirigido a estudiantes de nivel preescolar, primaria, secundaria o de educación especial que asisten a instituciones privadas (particulares) que cuenten con autorización oficial para impartir estudios.El apoyo consiste en un descuento en la colegiatura mensual del alumno, de valores que pueden ser: 25 %, 50 %, 75 % o 100 % del pago mensual de la escuela particular. El propósito es facilitar que los alumnos de instituciones particulares que tienen buenas calificaciones o que se encuentran en situación económica que lo amerita, puedan continuar o concluir sus estudios básicos o de educación especial sin que el costo de la colegiatura se convierta en un obstáculo</p>
+      <p><b>Tipo de beca:</b> Apoyo Economico</p>
+      <p><b>Requisitos:</b></p>
+      <ul>
+        <li>•Estar inscrito en una institución educativa particular</li>
+        <li>•Contar con buen aprovechamiento académico</li>
+        <li>•Demostrar necesidad económica</li>
+        <li>•Entregar documentación completa</li>
+      </ul>
+     <p><b>Institucion:</b>Secretaría de Educación del Estado de Nuevo León</p>
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtZYySJQXipu-4FTCCPlDh2Ph4AnFg1nsy4g&s" alt="Foto de cantantes" style="width: 300px;">
+     <p><b>Link:</b><a href="https://www.nl.gob.mx/es/convocatoria/becas-en-instituciones-educativas-particulares-de-educacion-basica-y-especial-ciclo"_blank"> SITIO OFICIAL </a></p>
+      </div>
+<div class="tarjeta">
+       <h2>Verificacion de aptitud para Beca</h2>
+       <div class="contenedor-boton">
+  <button class="boton-aplicar" onclick="mensajeBeca3()">Da clic para verificar a que beca eres apto</button>
+</div>
+
+</div>
+
+    <button class="volver" onclick="regresar()">Regresar</button>
+  </section>
+
+  <script>
+function bienvenida() {
+  alert("¡Bienvenido a mi pagina de asignacion de becas!");
+}
+
+function mostrarMenu() {
+  const menu = document.getElementById("menu");
+  const boton = document.querySelector(".nombre");
+
+  menu.classList.toggle("oculto");
+  boton.classList.toggle("oculto");
+}
+
+function abrirSeccion(id) {
+  document.getElementById("menu").classList.add("oculto");
+  document.getElementById(id).classList.remove("oculto");
+}
+
+function regresar() {
+  const menu = document.getElementById("menu");
+  const boton = document.querySelector(".nombre");
+  const uni = document.getElementById("becas-universitarias");
+  const priv = document.getElementById("becas-privadas");
+  const gob = document.getElementById("becas-gobierno");
+
+  // Si estás en una sección, regresa al menú
+  if (!uni.classList.contains("oculto") ||
+      !priv.classList.contains("oculto") ||
+      !gob.classList.contains("oculto")) {
+
+    uni.classList.add("oculto");
+    priv.classList.add("oculto");
+    gob.classList.add("oculto");
+    menu.classList.remove("oculto");
+
+  } else {
+    // Si estás en el menú, regresa al botón principal
+    menu.classList.add("oculto");
+    boton.classList.remove("oculto");
+  }
+}
+
+ function mensajeBeca1() {
+    alert("Según los datos que proporcionaste y con base en los requisitos establecidos, actualmente no cumples con los requisitos para aplicar a ninguna de las becas disponibles.");
+  }
+
+ function mensajeBeca2() {
+  alert("Según los requisitos establecidos para cada beca, los resultados son los siguientes:\n\n✅ Beca de Apadrinamiento: Apto\n❌ Beca Santander Apoyo a la Manutencion 2025: No apto");
+}
+
+
+  function mensajeBeca3() {
+    alert("Según los requisitos establecidos para cada beca, los resultados son los siguientes:\n\n✅ Beca Jovenes Escribiendo el futuro: Apto\n❌ Beca Benito Juarez: No apto\n❌ Beca en Instituciones Educativas Particulares de Educación Básica y Especial (Nuevo León): No apto");
+  }
+</script>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Interactivo - Alexis Mendoza</title>
+  <style>
+    
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef, #dee2e6);
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      animation: fadeIn 1s ease;
+      color: #2c2c2c;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header {
+      background: #343a40;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 1.8em;
+      letter-spacing: 1px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      text-align: center;
+    }
+
+    #inicio {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+    }
+
+    #inicio button {
+      background: #6c757d;
+      color: white;
+      border: none;
+      padding: 18px 40px;
+      border-radius: 15px;
+      font-size: 1.5em;
+      cursor: pointer;
+      font-weight: 600;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    }
+
+    #inicio button:hover {
+      background: #adb5bd;
+      transform: scale(1.1);
+    }
+
+    
+    .perfil {
+      background-color: white;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+      max-width: 600px;
+      width: 90%;
+      transition: transform 0.3s ease;
+    }
+
+    .perfil:hover {
+      transform: scale(1.02);
+    }
+
+    .perfil img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #6c757d;
+      margin-bottom: 15px;
+    }
+
+    .perfil h1 {
+      margin: 10px 0;
+      color: #212529;
+    }
+
+    .perfil p {
+      font-size: 1em;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .menu button {
+      background-color: #6c757d;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 12px;
+      font-size: 1em;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .menu button:hover {
+      background-color: #adb5bd;
+      transform: scale(1.07);
+    }
+
+    
+    .seccion {
+      display: none;
+      background: white;
+      margin: 30px auto;
+      padding: 30px;
+      width: 90%;
+      max-width: 900px;
+      border-radius: 20px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+      animation: fadeIn 0.8s ease;
+    }
+
+    .seccion h2 {
+      color: #212529;
+      border-left: 6px solid #6c757d;
+      padding-left: 10px;
+    }
+
+    .seccion ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .seccion li {
+      margin: 10px 0;
+      text-align: justify;
+      color: #333;
+    }
+
+    .seccion img {
+      width: 280px;
+      height: auto;
+      border-radius: 12px;
+      margin-top: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    .seccion img:hover {
+      transform: scale(1.05);
+    }
+
+    
+    .volver, .inicio {
+      display: block;
+      margin: 25px auto 0;
+      background-color: #6c757d;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 600;
+    }
+
+    .volver:hover, .inicio:hover {
+      background-color: #adb5bd;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #343a40;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9em;
+
+    }
+.btn-link {
+  background-color: #6c757d;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn-link:hover {
+  background-color: #343a40;
+}
+
+   
+    @keyframes alertFade {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+
+<body onload="bienvenida()">
+  
+  <header>CV - Alexis Mendoza</header>
+
+  
+  <div id="inicio">
+    <button onclick="mostrarMenu()">Alexis Francisco Mendoza Vázquez</button>
+  </div>
+
+  
+  <main id="principal" style="display: none;">
+    <div class="perfil">
+      <img src="WhatsApp Image 2024-09-20 at 3.23.40 PM.jpeg" alt="Foto de perfil">
+      <h1>Alexis Francisco Mendoza Vázquez</h1>
+      <p>Estudiante de la Universidad Autonoma de Nuevo Leon en la Facultad de Ingenieria Mecanica y electrica, cursando la carrera de Ingeniería en Tecnología de Software, aprendiendo a programar, en aprendizaje constante y desarrollo personal.</p>
+<p><b>Contacto:</b> 8129166424.</p> <p><b>Correo:</b> ale170606@gmail.com.</p> <p><b>Ubicacion:</b> Monterrey Nuevo Leon.</p> <p><b>Semestre(Actual):</b> Quinto Semestre.</p>
+
+
+
+      <div class="menu">
+        <button onclick="abrirSeccion('Formacion Academica')">Formación Académica</button>
+        <button onclick="abrirSeccion('Trayectoria Laboral')">Trayectoria Laboral</button>
+        <button onclick="abrirSeccion('hobbies')">Hobbies</button>
+      </div>
+
+      <button class="inicio" onclick="volverInicio()">Inicio</button>
+    </div>
+  </main>
+
+
+  <section id="Formacion Academica" class="seccion">
+    <h2>Formación Académica</h2>
+      <ul><b>Primaria(2010-2016)</b>
+      <li>Mi etapa en la primaria comenzó en el año 2012, a la edad de 7 años. Cursé toda esta etapa en la Escuela Primaria Ernesto Ibarra Luevano, donde tuve la oportunidad de aprender de distintos maestros y convivir con compañeros que me ayudaron a reforzar mis conocimientos. Durante estos años, logré obtener buenos resultados académicos; en tercer grado tuve la fortuna de quedar en segundo lugar en el cuadro de honor en varias ocasiones. Finalmente, en el año 2018, después de seis años de esfuerzo y dedicación, concluí mis estudios de nivel básico con un promedio de 9.2, destacando en materias como matemáticas, español y geografía. Con esto, di por terminada esta etapa para dar inicio a mi formación en la secundaria.</li>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKfBNQVfZXJANerWJM3HCL8NS_RGWgbycBYw&s" alt="Foto de mi etapa en primaria" style="width: 300px;">
+<p><b>Link:</b><a href="https://www.facebook.com/p/Primaria-Ernesto-Ibarra-Luévano-TV-100063245918349/?locale=es_LA" target="_blank">Facebook Oficial</a></p>
+    </ul>
+
+      <ul><b>Secundaria(2018-2021)</b>
+      <li>Mi etapa en la secundaria comenzó en el año 2018, cuando tenía 12 años. Cursé mis estudios en la Escuela Secundaria Técnica No. 95 “Prof. José Juan Villarreal Villarreal”. Al igual que en la primaria, tuve la oportunidad de aprender con diferentes maestros que me ayudaron a adquirir nuevos conocimientos fundamentales que hasta el día de hoy continúan siendo de gran utilidad.A diferencia de mi etapa anterior, no todos los años fueron presenciales debido a la pandemia que surgió a finales del año 2019 e inicios del 2020. Esto provocó que tuviera que cursar la mitad de la secundaria en modalidad en línea, lo que representó un reto adicional. Sin embargo, gracias al esfuerzo y la dedicación, logré graduarme en el año 2021 con un promedio de 9.0, concluyendo así satisfactoriamente mi etapa en la educación secundaria.</li>
+      <img src="https://est95.edu.mx/img/slides/2.jpg" alt="Foto de mi etapa en la secundaria" style="width: 300px;">
+     <p><b>Link:</b><a href="https://est95.edu.mx" target="_blank">Facebook Oficial</a></p>
+
+    </ul>
+
+    </ul>
+
+ <ul><b>Preparatoria(2021-2023)</b>
+      <li>Mi etapa en la preparatoria la cursé en la Preparatoria No. 16, y comenzó de una manera un poco distinta a mis etapas educativas anteriores. Debido a la pandemia, tuve que iniciar mis estudios en modalidad en línea, lo que al principio resultó un poco complicado; sin embargo, con el paso del tiempo, logré adaptarme y las cosas se fueron facilitando. Fue hasta el segundo semestre, pocas semanas después de haber iniciado, cuando recibimos la noticia de que los riesgos de la pandemia habían disminuido, por lo que la modalidad pasó a ser presencial. Durante esta etapa tuve la fortuna de conocer a muchas personas, así como de aprender de diversos maestros que contribuyeron a mi formación académica. Finalmente, en el año 2023, logré graduarme de la preparatoria con un promedio de 9.3, destacando principalmente en las materias de Matemáticas, Filosofía y Español.</li>
+      <img src="https://vidauniversitaria.uanl.mx/wp-content/uploads/2024/09/preparatoria-16-fachada-uanl.jpg" alt="Foto de mi etapa en la preparatoria" style="width: 300px;">
+   <p><b>Link:</b><a href="https://preparatoria16.uanl.mx" target="_blank">Pagina Oficial</a></p>
+    </ul>
+
+      <ul><b>Facultad(2023-Actualidad)</b>
+      <li>Mi etapa en la facultad comenzó en el año 2023, en la Facultad de Ingeniería Mecánica y Eléctrica, con el objetivo de estudiar la carrera de Ingeniería en Tecnología de Software. Esta etapa inició de manera presencial, como es habitual, ya que para ese momento la pandemia había concluido. Mi primer semestre fue una combinación de emociones, pues realmente me entusiasma el lugar donde estudio y la carrera que elegí. Sin embargo, durante ese primer periodo tuve la mala fortuna de reprobar una materia en tercera oportunidad: Matemáticas I. Esto ocasionó un pequeño retraso en los siguientes semestres, pero decidí seguir adelante y logré aprobarla. Desde entonces, he tenido la satisfacción de no volver a reprobar ninguna materia. Actualmente continúo mis estudios con el mismo entusiasmo y dedicación con los que inicié, con la firme convicción de que algún día lograré graduarme en lo que me apasiona y a lo que deseo dedicarme profesionalmente.</li>
+      <img src="https://www.fime.uanl.mx/wp-content/uploads/2021/10/FACHADA2.jpg" alt="Foto de mi etapa en la facultad" style="width: 300px;">
+      <p><b>Link:</b><a href="https://www.fime.uanl.mx" target="_blank">Pagina Oficial</a></p>
+    </ul>
+      <ul><b>Cursos</b>
+      <li>Durante mi formación académica, he tenido la oportunidad de tomar distintos cursos que me han ayudado a mejorar mis conocimientos y a prepararme para los siguientes pasos en mi trayectoria. El primer curso que realicé fue el de preparación para el examen de admisión a la preparatoria. Este curso fue de gran ayuda, ya que al momento de presentar el examen oficial, se me facilitó mucho y logré ingresar a la preparatoria que deseaba.</li>
+      <li>Posteriormente, en segundo semestre de preparatoria, tomé un curso de Matemáticas. Gracias a este curso pude comprender mejor los temas y avanzar más rápido que mis compañeros, lo que hizo que la materia se me hiciera más sencilla.</li>
+      <li>Más adelante, tomé otro curso de preparación, esta vez para el examen de admisión a la facultad. Al igual que los anteriores, me resultó muy útil, ya que gracias a lo aprendido pude aprobar el examen en mi primer intento e ingresar a la Facultad de Ingeniería Mecánica y Eléctrica.</li>
+      <li>Actualmente, estoy cursando clases de inglés, con el objetivo de mejorar mis habilidades en el idioma, ya que considero que en el futuro será una herramienta muy valiosa tanto en el ámbito profesional como en la vida diaria.</li>
+      <img src="https://educacioncontinua.ucol.mx/pluginfile.php/240/coursecat/description/diplomado.jpg" alt="Foto de mi etapa en la Facultad" style="width: 300px;">
+    </ul>
+    <button class="volver" onclick="regresar()">Volver</button>
+  </section>
+
+  <section id="Trayectoria Laboral" class="seccion">
+    <h2>Trayectoria Laboral</h2>
+    <p>Actualmente no cuento con experiencia laboral, pero me encuentro en desarrollo de diferentes habilidades técnicasque voy ocupar para mi futura carrera profesional.</p>
+    <button class="volver" onclick="regresar()">Volver</button>
+  </section>
+
+  <section id="hobbies" class="seccion">
+    <h2>Hobbies</h2>
+    <p>Uno de mis hobbies es jugar videojuegos, una actividad que siempre me ha parecido muy entretenida y una buena forma de relajarme. Aunque actualmente ya no le dedico tanto tiempo debido a los proyectOS de la facultad, sigo disfrutando de este pasatiempo cuando tengo la oportunidad, ya que me ayuda a despejar la mente y mejorar mi concentración.</p>
+
+    <p>Otro de mis pasatiempos es hacer ejercicio, algo que considero fundamental para mantener un equilibrio entre mi mente y mi cuerpo. Me gusta realizar rutinas por las mañanas, ya que siento que esto me ayuda a iniciar el día con energía y reducir el estrés.</p>
+
+    <p>También disfruto mucho salir a pasear con mi perro en un parque cercano a mi casa. Es una actividad que me permite desconectarme por un momento de las obligaciones diarias, sentirme más libre mentalmente y al mismo tiempo brindarle a mi mascota la oportunidad de ejercitarse y divertirse.</p>
+
+     <p>Por último, uno de mis hobbies favoritos es escuchar música. Es una actividad que realizo principalmente por las noches, ya que me ayuda a relajarme después de un día ocupado. La música me ayuda a mejorar mi estado de ánimo y, en muchas ocasiones, me acompaña mientras realizo trabajos de la facultad.</p>
+
+       <div style="display: flex; justify-content: center;  gap: 15px; margin-top: 15px;">
+      <img src="https://vanguardiagamer.cl/wp-content/uploads/2025/04/imagen-7-controles.jpg" alt="Primaria" style="width: 280px; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.3);">
+      <img src="WhatsApp Image 2025-11-11 at 5.32.09 PM.jpeg" alt="Escuela" style="width: 280px; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.3);">
+     </div>
+
+     <div style="display: flex; justify-content: center;  gap: 15px; margin-top: 15px;">
+     <img src="https://media.istockphoto.com/id/1385690630/es/vector/hombre-paseando-perro-en-la-calle-semi-plano-color-vector-caracteres.jpg?s=612x612&w=0&k=20&c=VWpRGGjT6oXhKBFzpnWJ9qmID20mgf27Ig729JpnJ94=" alt="Foto 3" style="width: 280px; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.3);">
+
+     <img src="https://previews.123rf.com/images/mikailain/mikailain1306/mikailain130600008/20360741-listening-to-music-a-boy-listening-to-music-with-headphones-on-his-head.jpg" alt="Foto 3" style="width: 280px; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.3);">
+      </div>
+    <button class="volver" onclick="regresar()">Volver</button>
+  </section>
+
+ 
+  <footer>© 2025 - CV creado por Alexis Mendoza</footer>
+
+  
+  <script>
+  function bienvenida() {
+      alert("¡Bienvenido al CV de Alexis Mendoza!");
+    }
+
+    function mostrarMenu() {
+      document.getElementById("inicio").style.display = "none";
+      document.getElementById("principal").style.display = "flex";
+    }
+
+    function abrirSeccion(id) {
+      document.getElementById("principal").style.display = "none";
+      document.querySelectorAll(".seccion").forEach(s => s.style.display = "none");
+      document.getElementById(id).style.display = "block";
+    }
+
+    function regresar() {
+      document.getElementById("principal").style.display = "flex";
+      document.querySelectorAll(".seccion").forEach(s => s.style.display = "none");
+    }
+
+    function volverInicio() {
+      document.getElementById("inicio").style.display = "flex";
+      document.getElementById("principal").style.display = "none";
+      document.querySelectorAll(".seccion").forEach(s => s.style.display = "none");
+    }
+  </script>
+
+</body>
+</html>
