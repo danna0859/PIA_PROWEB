@@ -1,0 +1,209 @@
+/* -------------------------
+   ESTILO GLOBAL
+-------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #f5f6f8; /* Gris muy claro */
+    color: #1f2937; /* Gris oscuro elegante */
+}
+
+/* -------------------------
+   HEADER
+-------------------------- */
+header {
+    background: #ffffff;
+    padding: 28px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    border-radius: 0 0 18px 18px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+header p {
+    font-size: 1rem;
+    color: #4b5563;
+    text-align: center;
+}
+
+header .logo {
+    height: 90px;
+    width: auto;
+}
+
+/* -------------------------
+   NAV (MENÚ)
+-------------------------- */
+nav {
+    margin-top: 8px;
+    background: #ffffff;
+    padding: 14px 0;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+nav a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 600;
+    font-size: 1rem;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: 0.25s ease;
+}
+
+nav a:hover {
+    color: #3b82f6; /* Azul suave */
+    border-color: #3b82f6;
+}
+
+/* -------------------------
+   MAIN
+-------------------------- */
+main.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* SECCIONES COMO TARJETAS */
+section {
+    background: #ffffff;
+    padding: 36px;
+    border-radius: 24px;
+    margin-bottom: 35px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+/* TÍTULOS */
+h2 {
+    font-size: 1.9rem;
+    margin-bottom: 22px;
+    color: #111827;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: #111827;
+}
+
+h4 {
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+    color: #111827;
+}
+
+/* -------------------------
+   PERFIL
+-------------------------- */
+.perfil-card {
+    background: #f9fafb;
+    border-radius: 20px;
+    padding: 26px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    /* Nuevo estilo */
+    border: 4px solid #3b82f6;
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.25);
+}
+
+/* -------------------------
+   TRAYECTORIA
+-------------------------- */
+.trajectory-item {
+    display: flex;
+    gap: 22px;
+    margin-top: 26px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #f9fafb;
+    align-items: flex-start;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.trajectory-item img {
+    width: 170px;
+    height: 115px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.13);
+}
+
+.trajectory-item p {
+    margin-bottom: 5px;
+    font-size: 0.98rem;
+}
+
+.trajectory-item a {
+    margin-top: 4px;
+    font-size: 0.9rem;
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.trajectory-item a:hover {
+    text-decoration: underline;
+}
+
+/* -------------------------
+   HOBBIES
+-------------------------- */
+#hobbies {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.hobby-item {
+    background: #f9fafb;
+    border-radius: 20px;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+}
+
+.hobby-item img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 12px;
+}
+
+/* -------------------------
+   FOOTER
+-------------------------- */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-top: 25px;
+}

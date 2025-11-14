@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Becas disponibles - Johan Emilio Vázquez Luna</title>
+    <link rel="stylesheet" href="css/styles2.css">
+>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Becas para estudiantes de FIME</h1>
+        <p>Explora opciones de apoyo económico según tu perfil académico</p>
+    </header>
+
+    <main>
+
+       
+        <section class="alerts-section">
+            <div class="alert-card" id="personalized-alert">
+                <h2>📊 Mis becas recomendadas</h2>
+                <div class="alert-content">
+                    <p id="alert-message">
+                        Ingresa tu promedio y tu situación para ver qué becas se adaptan mejor a ti.
+                    </p>
+                    <button class="btn-primary" id="btn-elegibilidad">
+                        Verificar elegibilidad
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="filters-section">
+            <h2>Filtrar por tipo de beca</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="gobierno">Gobierno</button>
+                <button class="filter-btn" data-filter="privado">Sector privado</button>
+            </div>
+        </section>
+
+        
+        <section class="scholarship-section" data-category="gobierno">
+            <div class="section-header">
+                <h2>🏛️ Becas de gobierno</h2>
+                <span class="badge">2 becas</span>
+            </div>
+
+            <div class="scholarship-cards">
+
+            
+                <article class="scholarship-card" data-id="benito">
+                    <div class="card-header">
+                        <h3>Beca Benito Juárez Educación Superior</h3>
+                        <span class="amount">$2,575 MXN bimestrales</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="description">
+                            Apoyo económico federal para estudiantes de licenciatura en instituciones públicas.
+                        </p>
+                        <div class="requirements">
+                            <h4>Requisitos principales:</h4>
+                            <ul>
+                                <li>Estar inscrito en universidad pública</li>
+                                <li>No contar con otra beca económica federal</li>
+                                <li>Pertener a familia de bajos recursos</li>
+                                <li>Contar con CURP y identificación oficial</li>
+                            </ul>
+                        </div>
+                        <div class="deadline">
+                            <strong>Fecha estimada de registro:</strong> Agosto 2025
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-apply" data-scholarship="Beca Benito Juárez" data-url="https://www.gob.mx/becasbenitojuarez">
+                            Aplicar
+                        </button>
+                        <a href="https://www.gob.mx/becasbenitojuarez" target="_blank" class="btn-info">
+                            Más información
+                        </a>
+                    </div>
+                </article>
+
+              
+                <article class="scholarship-card" data-id="jovenes">
+                    <div class="card-header">
+                        <h3>Jóvenes Escribiendo el Futuro</h3>
+                        <span class="amount">$2,575 MXN bimestrales</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="description">
+                            Beca dirigida a estudiantes que cursan educación superior en contextos de vulnerabilidad.
+                        </p>
+                        <div class="requirements">
+                            <h4>Requisitos principales:</h4>
+                            <ul>
+                                <li>Estudiar en universidad pública</li>
+                                <li>No contar con título previo</li>
+                                <li>Edad entre 18 y 29 años</li>
+                                <li>Preferentemente en zonas de atención prioritaria</li>
+                            </ul>
+                        </div>
+                        <div class="deadline">
+                            <strong>Fecha estimada de registro:</strong> Septiembre 2025
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-apply" data-scholarship="Jóvenes Escribiendo el Futuro" data-url="https://www.gob.mx/becasbenitojuarez">
+                            Aplicar
+                        </button>
+                        <a href="https://www.gob.mx/becasbenitojuarez" target="_blank" class="btn-info">
+                            Más información
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+       
+        <section class="scholarship-section" data-category="privado">
+            <div class="section-header">
+                <h2>🏢 Becas del sector privado</h2>
+                <span class="badge">2 becas</span>
+            </div>
+
+            <div class="scholarship-cards">
+
+                
+                <article class="scholarship-card" data-id="becalos">
+                    <div class="card-header">
+                        <h3>Bécalos – Programas de tecnología</h3>
+                        <span class="amount">% de colegiatura + apoyo</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="description">
+                            Programa dirigido a estudiantes de ingeniería y tecnologías con buen desempeño académico.
+                        </p>
+                        <div class="requirements">
+                            <h4>Requisitos principales:</h4>
+                            <ul>
+                                <li>Promedio mínimo de 85</li>
+                                <li>Estar inscrito en licenciatura relacionada con tecnología</li>
+                                <li>Comprobar necesidad económica</li>
+                                <li>Entrevista en línea</li>
+                            </ul>
+                        </div>
+                        <div class="deadline">
+                            <strong>Fecha límite:</strong> Julio 2025
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-apply" data-scholarship="Bécalos Programas de tecnología" data-url="https://www.becalos.mx">
+                            Aplicar
+                        </button>
+                        <a href="https://www.becalos.mx" target="_blank" class="btn-info">
+                            Más información
+                        </a>
+                    </div>
+                </article>
+
+               
+                <article class="scholarship-card" data-id="fundacion">
+                    <div class="card-header">
+                        <h3>Fundación Telmex – Educación superior</h3>
+                        <span class="amount">Apoyo integral</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="description">
+                            Beca para estudiantes destacados con participación en proyectos o actividades extracurriculares.
+                        </p>
+                        <div class="requirements">
+                            <h4>Requisitos principales:</h4>
+                            <ul>
+                                <li>Promedio mínimo de 90</li>
+                                <li>Participación en actividades culturales, académicas o deportivas</li>
+                                <li>Ensayo de motivación</li>
+                                <li>Documentación socioeconómica</li>
+                            </ul>
+                        </div>
+                        <div class="deadline">
+                            <strong>Fecha límite:</strong> Agosto 2025
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-apply" data-scholarship="Fundación Telmex Educación superior" data-url="https://fundaciontelmextelcel.org/becas/">
+                            Aplicar
+                        </button>
+                        <a href="https://fundaciontelmextelcel.org/becas/" target="_blank" class="btn-info">
+                            Más información
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="Johanp1.html" class="link-back">Volver a mi perfil</a>
+        <p>&copy; 2025 Johan Vázquez. Página de becas.</p>
+    </footer>
+
+    <script src="js/becas-johan.js"></script>
+</body>
+</html>

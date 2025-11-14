@@ -1,0 +1,305 @@
+/* -------------------------
+   ESTILO GLOBAL
+-------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #020617; /* casi negro, discreto */
+    color: #e5e7eb;      /* gris muy claro */
+}
+
+/* -------------------------
+   HEADER
+-------------------------- */
+header {
+    text-align: center;
+    padding: 28px 16px 22px;
+    background: #020617;
+    border-bottom: 1px solid #1f2937;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+    color: #f9fafb;
+}
+
+header p {
+    font-size: 0.95rem;
+    color: #9ca3af;
+}
+
+/* -------------------------
+   MAIN
+-------------------------- */
+main {
+    max-width: 1100px;
+    margin: 28px auto 50px;
+    padding: 0 16px;
+}
+
+/* -------------------------
+   ALERTA PERSONALIZADA
+-------------------------- */
+.alerts-section {
+    margin-bottom: 24px;
+}
+
+.alert-card {
+    background: #0b1120;
+    border-radius: 18px;
+    padding: 20px 22px;
+    border: 1px solid #1f2937;
+    box-shadow: 0 18px 40px rgba(15,23,42,0.7);
+}
+
+.alert-card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #e5e7eb;
+}
+
+.alert-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#alert-message {
+    font-size: 0.95rem;
+    color: #9ca3af;
+}
+
+.btn-primary {
+    align-self: flex-start;
+    padding: 10px 18px;
+    background: #0d9488;        /* teal varonil */
+    color: #f9fafb;
+    border: none;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.btn-primary:hover {
+    background: #0f766e;
+}
+
+/* -------------------------
+   FILTROS
+-------------------------- */
+.filters-section {
+    margin: 20px 0;
+    background: #020617;
+    padding: 18px 20px;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+    border: 1px solid #1f2937;
+}
+
+.filters-section h2 {
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+    color: #e5e7eb;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    background: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #d1d5db;
+    transition: 0.25s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: #0d9488;
+    border-color: #0d9488;
+    color: #f9fafb;
+}
+
+/* -------------------------
+   SECCIONES DE BECAS
+-------------------------- */
+.scholarship-section {
+    margin-top: 22px;
+    background: #020617;
+    padding: 22px 20px 26px;
+    border-radius: 20px;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.75);
+    border: 1px solid #1f2937;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.section-header h2 {
+    font-size: 1.25rem;
+    color: #e5e7eb;
+}
+
+.badge {
+    background: #022c22;
+    color: #6ee7b7;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* -------------------------
+   TARJETAS
+-------------------------- */
+.scholarship-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.scholarship-card {
+    background: #0b1120;
+    border-radius: 18px;
+    padding: 16px 16px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #1f2937;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f9fafb;
+}
+
+.amount {
+    font-size: 0.82rem;
+    padding: 3px 8px;
+    background: #022c22;
+    color: #6ee7b7;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+.card-body {
+    font-size: 0.9rem;
+    color: #d1d5db;
+}
+
+.description {
+    margin-bottom: 6px;
+}
+
+.requirements h4 {
+    font-size: 0.88rem;
+    margin-bottom: 4px;
+    color: #e5e7eb;
+}
+
+.requirements ul {
+    padding-left: 18px;
+    font-size: 0.86rem;
+    color: #9ca3af;
+}
+
+.requirements li {
+    margin-bottom: 2px;
+}
+
+.deadline {
+    margin-top: 6px;
+    font-size: 0.82rem;
+    color: #9ca3af;
+}
+
+/* FOOTER DE CADA CARD */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.btn-apply {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 999px;
+    background: #16a34a;
+    color: #f9fafb;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: 0.25s ease;
+}
+
+.btn-apply:hover {
+    background: #15803d;
+}
+
+.btn-info {
+    padding: 7px 12px;
+    border-radius: 999px;
+    border: 1px solid #374151;
+    font-size: 0.86rem;
+    color: #e5e7eb;
+    text-decoration: none;
+    background: #020617;
+    transition: 0.25s ease;
+}
+
+.btn-info:hover {
+    background: #111827;
+}
+
+/* -------------------------
+   FOOTER GENERAL
+-------------------------- */
+footer {
+    text-align: center;
+    padding: 20px 12px 30px;
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+
+.link-back {
+    display: inline-block;
+    margin-bottom: 6px;
+    color: #0ea5e9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.link-back:hover {
+    text-decoration: underline;
+}
