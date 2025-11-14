@@ -1,95 +1,228 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Intercambios_Brayan>
-  <Integranteuno>Brayan Lopez</Integranteuno>
-  <Informacion_Brayan>
-    <intercambio_academico>
-      <informacion_general>
-        <nombre>Brayan López Guzmán</nombre>
-        <matricula>20204567</matricula>
-        <facultad>Facultad de Ingeniería Mecánica y Eléctrica (FIME)</facultad>
-        <carrera>Ingeniero Administrador en Sistemas (IAS)</carrera>
-        <universidad>Universidad Autónoma de Nuevo León (UANL)</universidad>
-      </informacion_general>
+<intercambios_academicos>
+  
+  <!-- Información de Brayan -->
+  <intercambio_integrante id="1">
+    <informacion_personal>
+      <nombre>Brayan López Guzmán</nombre>
+      <matricula>20204567</matricula>
+      <facultad>Facultad de Ingeniería Mecánica y Eléctrica (FIME)</facultad>
+      <carrera>Ingeniero Administrador en Sistemas (IAS)</carrera>
+      <universidad>Universidad Autónoma de Nuevo León (UANL)</universidad>
+    </informacion_personal>
+    
+    <descripcion_carrera>
+      <parrafo>
+        La carrera de Ingeniero Administrador en Sistemas (IAS) forma profesionales capaces de integrar los conocimientos de la administración con la tecnología de la información.
+        Su objetivo es optimizar los procesos empresariales mediante el uso eficiente de los recursos informáticos, la gestión de datos y la planeación estratégica.
+        El egresado puede desempeñarse en áreas de desarrollo de sistemas, gestión de proyectos tecnológicos, análisis de información y dirección de equipos multidisciplinarios.
+      </parrafo>
+    </descripcion_carrera>
+    
+    <intercambios_nacionales>
+      <universidad>
+        <nombre>Universidad Nacional Autónoma de México (UNAM)</nombre>
+        <pais>México</pais>
+        <descripcion>
+          La UNAM es una de las instituciones públicas más reconocidas de América Latina.
+          Ofrece oportunidades de movilidad nacional con un enfoque en investigación, innovación y formación integral.
+          Los alumnos pueden cursar materias equivalentes y fortalecer sus competencias académicas y profesionales.
+        </descripcion>
+        <requisitos>
+          <requisito>Ser estudiante regular de FIME-UANL.</requisito>
+          <requisito>Promedio mínimo de 85.</requisito>
+          <requisito>Haber cursado al menos el 50% de los créditos de la carrera.</requisito>
+          <requisito>Nivel mínimo B1 de inglés.</requisito>
+        </requisitos>
+        <beneficios>
+          <beneficio>Apoyo económico de movilidad nacional.</beneficio>
+          <beneficio>Reconocimiento de materias cursadas.</beneficio>
+          <beneficio>Experiencia académica en una universidad de alto nivel.</beneficio>
+        </beneficios>
+      </universidad>
+    </intercambios_nacionales>
+    
+    <intercambios_internacionales>
+      <universidad>
+        <nombre>University of Toronto</nombre>
+        <pais>Canadá</pais>
+        <descripcion>
+          La University of Toronto es una de las universidades más prestigiosas de Norteamérica.
+          Se distingue por su investigación, programas en ingeniería, gestión y tecnología aplicada.
+          Ofrece intercambios académicos con asesoría personalizada y oportunidades de becas para estudiantes de sistemas y administración tecnológica.
+        </descripcion>
+        <requisitos>
+          <requisito>Ser alumno activo de la UANL.</requisito>
+          <requisito>Promedio mínimo de 90.</requisito>
+          <requisito>Dominio del idioma inglés (TOEFL mínimo 90 puntos o IELTS equivalente).</requisito>
+          <requisito>Carta de recomendación académica.</requisito>
+        </requisitos>
+        <beneficios>
+          <beneficio>Beca parcial durante la estancia.</beneficio>
+          <beneficio>Asesoría académica personalizada.</beneficio>
+          <beneficio>Acceso a programas de investigación y desarrollo empresarial internacional.</beneficio>
+        </beneficios>
+      </universidad>
       
-      <descripcion>
-        <parrafo>
-          La carrera de Ingeniero Administrador en Sistemas (IAS) forma profesionales capaces de integrar los conocimientos de la administración con la tecnología de la información.
-          Su objetivo es optimizar los procesos empresariales mediante el uso eficiente de los recursos informáticos, la gestión de datos y la planeación estratégica.
-          El egresado puede desempeñarse en áreas de desarrollo de sistemas, gestión de proyectos tecnológicos, análisis de información y dirección de equipos multidisciplinarios.
-        </parrafo>
-      </descripcion>
+      <universidad>
+        <nombre>Technical University of Munich (TUM)</nombre>
+        <pais>Alemania</pais>
+        <descripcion>
+          La TUM es una universidad líder en ingeniería, administración tecnológica y ciencias aplicadas.
+          Es reconocida mundialmente por su innovación, colaboración con la industria y programas de intercambio para estudiantes extranjeros.
+          Promueve el desarrollo profesional, cultural y académico de sus participantes mediante experiencias internacionales.
+        </descripcion>
+        <requisitos>
+          <requisito>Estar inscrito en FIME-UANL.</requisito>
+          <requisito>Promedio mínimo de 85.</requisito>
+          <requisito>Nivel mínimo B2 de inglés o alemán.</requisito>
+          <requisito>Carta de motivos y aprobación del coordinador de intercambio.</requisito>
+        </requisitos>
+        <beneficios>
+          <beneficio>Oportunidad de cursar materias equivalentes.</beneficio>
+          <beneficio>Acceso a laboratorios y proyectos internacionales.</beneficio>
+          <beneficio>Experiencia académica y cultural en Europa.</beneficio>
+        </beneficios>
+      </universidad>
+    </intercambios_internacionales>
+    
+    <informacion_autor>
+      <nombre>Brayan López Guzmán</nombre>
+      <anio>2025</anio>
+    </informacion_autor>
+  </intercambio_integrante>
+
+  <!-- Información de Danna -->
+  <intercambio_integrante id="2">
+    <informacion_personal>
+      <nombre>Danna Paola Ruiz Hernandez</nombre>
+      <matricula>20204567</matricula>
+      <facultad>Facultad de Ingeniería Mecánica y Eléctrica (FIME)</facultad>
+      <carrera>Ingeniero Administrador en Sistemas (IAS)</carrera>
+      <universidad>Universidad Autónoma de Nuevo León (UANL)</universidad>
+    </informacion_personal>
+    
+    <descripcion_carrera>
+      <parrafo>
+        La carrera de Ingeniero Administrador en Sistemas (IAS) forma profesionales capaces de integrar los conocimientos de la administración con la tecnología de la información.
+        Su objetivo es optimizar los procesos empresariales mediante el uso eficiente de los recursos informáticos, la gestión de datos y la planeación estratégica.
+        El egresado puede desempeñarse en áreas de desarrollo de sistemas, gestión de proyectos tecnológicos, análisis de información y dirección de equipos multidisciplinarios.
+      </parrafo>
+    </descripcion_carrera>
+    
+    <intercambios_nacionales>
+      <universidad>
+        <nombre>Universidad Nacional Autónoma de México (UNAM)</nombre>
+        <pais>México</pais>
+        <descripcion>
+          La UNAM es una de las instituciones públicas más reconocidas de América Latina.
+          Ofrece oportunidades de movilidad nacional con un enfoque en investigación, innovación y formación integral.
+          Los alumnos pueden cursar materias equivalentes y fortalecer sus competencias académicas y profesionales.
+        </descripcion>
+        <requisitos>
+          <requisito>Ser estudiante regular de FIME-UANL.</requisito>
+          <requisito>Promedio mínimo de 85.</requisito>
+          <requisito>Haber cursado al menos el 50% de los créditos de la carrera.</requisito>
+          <requisito>Nivel mínimo B1 de inglés.</requisito>
+        </requisitos>
+        <beneficios>
+          <beneficio>Apoyo económico de movilidad nacional.</beneficio>
+          <beneficio>Reconocimiento de materias cursadas.</beneficio>
+          <beneficio>Experiencia académica en una universidad de alto nivel.</beneficio>
+        </beneficios>
+      </universidad>
       
-      <intercambio_nacional>
-        <universidad>
-          <nombre>Universidad Nacional Autónoma de México (UNAM)</nombre>
-          <pais>México</pais>
-          <descripcion>
-            La UNAM es una de las instituciones públicas más reconocidas de América Latina.
-            Ofrece oportunidades de movilidad nacional con un enfoque en investigación, innovación y formación integral.
-            Los alumnos pueden cursar materias equivalentes y fortalecer sus competencias académicas y profesionales.
-          </descripcion>
-          <requisitos>
-            <requisito>Ser estudiante regular de FIME-UANL.</requisito>
-            <requisito>Promedio mínimo de 85.</requisito>
-            <requisito>Haber cursado al menos el 50% de los créditos de la carrera.</requisito>
-            <requisito>Nivel mínimo B1 de inglés.</requisito>
-          </requisitos>
-          <beneficios>
-            <beneficio>Apoyo económico de movilidad nacional.</beneficio>
-            <beneficio>Reconocimiento de materias cursadas.</beneficio>
-            <beneficio>Experiencia académica en una universidad de alto nivel.</beneficio>
-          </beneficios>
-        </universidad>
-      </intercambio_nacional>
+      <universidad>
+        <nombre>Instituto Politécnico Nacional (IPN)</nombre>
+        <pais>México</pais>
+        <descripcion>
+          El IPN ofrece programas especializados en ingeniería y administración de sistemas.
+          Cuenta con planes de estudio compatibles con IAS, enfocados en sistemas computacionales y gestión empresarial.
+          Ideal para estudiantes que buscan fortalecer sus conocimientos técnicos y administrativos.
+        </descripcion>
+        <requisitos>
+          <requisito>Ser estudiante regular de FIME-UANL.</requisito>
+          <requisito>Promedio mínimo de 80.</requisito>
+          <requisito>Haber cursado al menos el 40% de los créditos.</requisito>
+          <requisito>Cartas de recomendación académica.</requisito>
+        </requisitos>
+        <beneficios>
+          <beneficio>Reconocimiento total de créditos.</beneficio>
+          <beneficio>Acceso a laboratorios especializados.</beneficio>
+          <beneficio>Programas de vinculación con la industria.</beneficio>
+        </beneficios>
+      </universidad>
+    </intercambios_nacionales>
+    
+    <intercambios_internacionales>
+      <universidad>
+        <nombre>University of Toronto</nombre>
+        <pais>Canadá</pais>
+        <descripcion>
+          La University of Toronto es una de las universidades más prestigiosas de Norteamérica.
+          Se distingue por su investigación, programas en ingeniería, gestión y tecnología aplicada.
+          Ofrece intercambios académicos con asesoría personalizada y oportunidades de becas para estudiantes de sistemas y administración tecnológica.
+        </descripcion>
+        <requisitos>
+          <requisito>Ser alumno activo de la UANL.</requisito>
+          <requisito>Promedio mínimo de 90.</requisito>
+          <requisito>Dominio del idioma inglés (TOEFL mínimo 90 puntos o IELTS equivalente).</requisito>
+          <requisito>Carta de recomendación académica.</requisito>
+        </requisitos>
+        <beneficios>
+          <beneficio>Beca parcial durante la estancia.</beneficio>
+          <beneficio>Asesoría académica personalizada.</beneficio>
+          <beneficio>Acceso a programas de investigación y desarrollo empresarial internacional.</beneficio>
+        </beneficios>
+      </universidad>
       
-      <intercambio_internacional>
-        <universidad>
-          <nombre>University of Toronto</nombre>
-          <pais>Canadá</pais>
-          <descripcion>
-            La University of Toronto es una de las universidades más prestigiosas de Norteamérica.
-            Se distingue por su investigación, programas en ingeniería, gestión y tecnología aplicada.
-            Ofrece intercambios académicos con asesoría personalizada y oportunidades de becas para estudiantes de sistemas y administración tecnológica.
-          </descripcion>
-          <requisitos>
-            <requisito>Ser alumno activo de la UANL.</requisito>
-            <requisito>Promedio mínimo de 90.</requisito>
-            <requisito>Dominio del idioma inglés (TOEFL mínimo 90 puntos o IELTS equivalente).</requisito>
-            <requisito>Carta de recomendación académica.</requisito>
-          </requisitos>
-          <beneficios>
-            <beneficio>Beca parcial durante la estancia.</beneficio>
-            <beneficio>Asesoría académica personalizada.</beneficio>
-            <beneficio>Acceso a programas de investigación y desarrollo empresarial internacional.</beneficio>
-          </beneficios>
-        </universidad>
-        
-        <universidad>
-          <nombre>Technical University of Munich (TUM)</nombre>
-          <pais>Alemania</pais>
-          <descripcion>
-            La TUM es una universidad líder en ingeniería, administración tecnológica y ciencias aplicadas.
-            Es reconocida mundialmente por su innovación, colaboración con la industria y programas de intercambio para estudiantes extranjeros.
-            Promueve el desarrollo profesional, cultural y académico de sus participantes mediante experiencias internacionales.
-          </descripcion>
-          <requisitos>
-            <requisito>Estar inscrito en FIME-UANL.</requisito>
-            <requisito>Promedio mínimo de 85.</requisito>
-            <requisito>Nivel mínimo B2 de inglés o alemán.</requisito>
-            <requisito>Carta de motivos y aprobación del coordinador de intercambio.</requisito>
-          </requisitos>
-          <beneficios>
-            <beneficio>Oportunidad de cursar materias equivalentes.</beneficio>
-            <beneficio>Acceso a laboratorios y proyectos internacionales.</beneficio>
-            <beneficio>Experiencia académica y cultural en Europa.</beneficio>
-          </beneficios>
-        </universidad>
-      </intercambio_internacional>
+      <universidad>
+        <nombre>Technical University of Munich (TUM)</nombre>
+        <pais>Alemania</pais>
+        <descripcion>
+          La TUM es una universidad líder en ingeniería, administración tecnológica y ciencias aplicadas.
+          Es reconocida mundialmente por su innovación, colaboración con la industria y programas de intercambio para estudiantes extranjeros.
+          Promueve el desarrollo profesional, cultural y académico de sus participantes mediante experiencias internacionales.
+        </descripcion>
+        <requisitos>
+          <requisito>Estar inscrito en FIME-UANL.</requisito>
+          <requisito>Promedio mínimo de 85.</requisito>
+          <requisito>Nivel mínimo B2 de inglés o alemán.</requisito>
+          <requisito>Carta de motivos y aprobación del coordinador de intercambio.</requisito>
+        </requisitos>
+        <beneficios>
+          <beneficio>Oportunidad de cursar materias equivalentes.</beneficio>
+          <beneficio>Acceso a laboratorios y proyectos internacionales.</beneficio>
+          <beneficio>Experiencia académica y cultural en Europa.</beneficio>
+        </beneficios>
+      </universidad>
       
-      <autor>
-        <nombre>Brayan López Guzmán</nombre>
-        <anio>2025</anio>
-      </autor>
-    </intercambio_academico>
-  </Informacion_Brayan>
-</Intercambios_Brayan>
+      <universidad>
+        <nombre>Massachusetts Institute of Technology (MIT)</nombre>
+        <pais>Estados Unidos</pais>
+        <descripcion>
+          El MIT es líder mundial en tecnología, ingeniería y gestión empresarial.
+          Ofrece programas de intercambio en sistemas de información y administración tecnológica.
+          Ideal para estudiantes destacados que buscan experiencia en innovación y emprendimiento tecnológico.
+        </descripcion>
+        <requisitos>
+          <requisito>Promedio mínimo de 95.</requisito>
+          <requisito>TOEFL iBT 100 o IELTS 7.5.</requisito>
+          <requisito>Cartas de recomendación de profesores.</requisito>
+          <requisito>Portafolio de proyectos técnicos.</requisito>
+        </requisitos>
+        <beneficios>
+          <beneficio>Acceso a investigación de vanguardia.</beneficio>
+          <beneficio>Becas de excelencia académica.</beneficio>
+          <beneficio>Networking con líderes tecnológicos.</beneficio>
+        </beneficios>
+      </universidad>
+    </intercambios_internacionales>
+    
+    <informacion_autor>
+      <nombre>Danna Paola Ruiz Hernandez</nombre>
+      <anio>2025</anio>
+    </informacion_autor>
+  </intercambio_integrante>
+
+</intercambios_academicos>
