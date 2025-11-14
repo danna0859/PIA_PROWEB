@@ -224,5 +224,121 @@
       <anio>2025</anio>
     </informacion_autor>
   </intercambio_integrante>
+  
+  <Intercambios_Alexis>
+  <informacion_general>
+    <nombre>Alexis Francisco Mendoza Vázquez</nombre>
+    <carrera>Ingeniería en Tecnología de Software</carrera>
+    <contacto>8129166424</contacto>
+  </informacion_general>
+
+  <descripcion>
+    <parrafo>
+      La carrera de Ingeniería en Tecnologías de Software representa una de las profesiones más relevantes y estratégicas en la actualidad, ya que impulsa el desarrollo de soluciones digitales que transforman todos los sectores productivos. En México, esta disciplina cuenta con una creciente demanda laboral gracias al avance de la transformación digital, la automatización y la necesidad constante de expertos capaces de diseñar, desarrollar y mantener sistemas informáticos eficientes y seguros. Diversas universidades del país se distinguen por ofrecer programas académicos modernos, orientados a la innovación tecnológica, la investigación aplicada y la colaboración con empresas líderes del sector, lo que permite a los estudiantes adquirir experiencia práctica desde etapas tempranas de su formación.
+      A nivel internacional, la ingeniería en software también se posiciona como una de las carreras más competitivas y mejor remuneradas. Instituciones reconocidas en países como Estados Unidos, Canadá, Alemania y Reino Unido destacan por sus programas especializados en inteligencia artificial, desarrollo web, ciberseguridad y gestión de proyectos tecnológicos. Estas universidades no solo brindan una sólida base teórica y práctica, sino que también fomentan la creatividad, el pensamiento crítico y la capacidad de trabajo en equipo, cualidades esenciales en el entorno global actual. Elegir una institución educativa con un enfoque integral y actualizado puede marcar la diferencia en la trayectoria profesional, abriendo oportunidades para participar en proyectos internacionales, emprender soluciones tecnológicas propias o colaborar en empresas de alto impacto dentro del ecosistema digital
+    </parrafo>
+    <parrafo>
+      A nivel internacional, la ingeniería en software también se posiciona como una de las carreras más competitivas y mejor remuneradas. Instituciones reconocidas en países como Estados Unidos, Canadá, Alemania y Reino Unido destacan por sus programas especializados en inteligencia artificial, desarrollo web, ciberseguridad y gestión de proyectos tecnológicos.
+    </parrafo>
+  </descripcion>
+
+  <intercambio_nacional>
+    <universidad>
+      <nombre>Tecnológico de Monterrey (ITESM)</nombre>
+      <programa>Ingeniería en Tecnologías Computacionales</programa>
+      <descripcion>
+        El Tecnológico de Monterrey es una de las universidades privadas más prestigiosas de México y América Latina. Fundada en 1943, se distingue por su enfoque en la innovación, el emprendimiento y la formación integral de líderes con visión global. Ofrece programas académicos de alta calidad en áreas como ingeniería, negocios, ciencias sociales, salud y tecnología.
+        El TEC promueve el aprendizaje práctico a través de proyectos, vinculación con empresas y programas de intercambio nacional e internacional. Además, fomenta el desarrollo de habilidades tecnológicas, liderazgo y responsabilidad social en sus estudiantes, preparando a sus egresados para enfrentar los retos del mundo actual.
+      </descripcion>
+      <duracion>8 semestres (4 años)</duracion>
+      <materias>
+        <materia>Pensamiento computacional y programación</materia>
+        <materia>Modelación matemática fundamental</materia>
+        <materia>Programación orientada a objetos</materia>
+        <materia>Sistemas operativos</materia>
+        <materia>Sistemas inteligentes</materia>
+      </materias>
+      <requisitos_generales>
+        <req>Haber concluido tus estudios de educación media superior</req>
+        <req>Pagar la cuota correspondiente al trámite del proceso de admisión</req>
+        <req>Tener un promedio mínimo en preparatoria de 80/100</req>
+      </requisitos_generales>
+      <requisitos_especificos>
+        <req>Cupos limitados en ciertas áreas, por lo que cumplir los requisitos no garantiza admisión.</req>
+        <req>Algunos programas pueden exigir entrevistas o dominio del inglés.</req>
+        <req>Para becas: promedio igual o superior a 90/100 y 1,360 puntos en la PAA.</req>
+      </requisitos_especificos>
+      <imagen>https://www.generacionuniversitaria.com.mx/wp-content/uploads/2025/07/Tec-de-Monterrey.jpg</imagen>
+    </universidad>
+
+    <mejor_opcion>
+      <pais>Mexico</pais>
+      <universidad>Tecnológico de Monterrey (ITESM)</universidad>
+      <razon>
+        Es una de las universidades privadas más reconocidas del país en el ámbito de la ingeniería y la tecnología. Destaca por su sólida relación con el sector empresarial, lo que permite a sus estudiantes participar en proyectos reales y adquirir experiencia práctica durante su formación. Además, ofrece amplias oportunidades de intercambio académico con instituciones internacionales, fomentando una visión global y el desarrollo de habilidades multiculturales. Su modelo educativo se centra en la innovación y en el fortalecimiento de competencias digitales, preparando a los egresados para enfrentar los retos del mundo tecnológico actual con una formación integral y de vanguardia.
+      </razon>
+    </mejor_opcion>
+  </intercambio_nacional>
+
+  <intercambio_internacional>
+    <universidad>
+      <nombre>Technical University of Munich (TUM)</nombre>
+      <pais>Alemania</pais>
+      <descripcion>
+        La Technical University of Munich (TUM) es una de las universidades más prestigiosas de Europa y líder en investigación científica y tecnológica. Fundada en 1868, se encuentra en Múnich, Alemania, y es reconocida por su excelencia en ingeniería, informática, ciencias naturales, medicina y administración. TUM fomenta la innovación, el emprendimiento y la colaboración internacional, trabajando estrechamente con empresas, centros de investigación y otras universidades de prestigio mundial. Además, ha formado a numerosos premios Nobel y líderes en ciencia y tecnología, consolidándose como una institución de referencia en educación superior global.
+      </descripcion>
+      <duracion>6 semestres (3 años)</duracion>
+      <materias>
+        <materia>Fundamentos de informática</materia>
+        <materia>Matemáticas discretas</materia>
+        <materia>Estructuras de datos y algoritmos</materia>
+        <materia>Ingeniería de software</materia>
+      </materias>
+      <requisitos_generales>
+        <req>Certificado equivalente al “Abitur” alemán</req>
+        <req>Dominio del idioma (TOEFL/IELTS o TestDaF)</req>
+        <req>Evaluación de equivalencia del certificado</req>
+        <req>Posibles exámenes de aptitud</req>
+      </requisitos_generales>
+      <imagen>https://www.eduopinions.com/wp-content/uploads/2017/10/Technical-University-of-Munich-%E2%80%93-TUM-campus-610x406.jpg</imagen>
+    </universidad>
+
+    <universidad>
+      <nombre>Carnegie Mellon University</nombre>
+      <pais>Estados Unidos</pais>
+      <programa>Bachelor in Software Engineering</programa>
+      <descripcion>
+        Carnegie Mellon University (CMU) es una universidad privada de investigación ubicada en Pittsburgh, Pensilvania. Fundada en 1900 por el empresario Andrew Carnegie, es reconocida mundialmente por su excelencia académica, innovación y liderazgo en ciencia, tecnología, ingeniería, arte y negocios. La universidad destaca especialmente en áreas como inteligencia artificial, robótica, ciencias de la computación e ingeniería, siendo considerada una de las mejores instituciones del mundo en estos campos. CMU promueve un ambiente interdisciplinario donde la creatividad, la investigación aplicada y la colaboración son fundamentales para el desarrollo académico y profesional de sus estudiantes.
+      </descripcion>
+      <duracion>4 años (8 semestres)</duracion>
+      <materias>
+        <materia>Fundamentos de Ingeniería de Software</materia>
+        <materia>Arquitectura de Software</materia>
+        <materia>Verificación y Validación de Software</materia>
+        <materia>Análisis y Diseño de Requisitos de Software</materia>
+      </materias>
+      <requisitos_generales>
+        <req>Completar la enseñanza media con buen desempeño académico</req>
+        <req>Presentar resultados del SAT o ACT</req>
+        <req>Demostrar dominio del inglés (TOEFL o IELTS)</req>
+        <req>Redactar 3 o 4 ensayos solicitados por CMU</req>
+      </requisitos_generales>
+      <imagen>https://upload.wikimedia.org/wikipedia/commons/f/f0/Hamerschlag_Hall_CMU.jpeg</imagen>
+    </universidad>
+
+    <mejor_opcion>
+      <pais>Extranjero</pais>
+      <universidad>Carnegie Mellon University (EE.UU.)</universidad>
+      <razon>
+        Es considerada la mejor universidad del mundo en Ingeniería en Software, con fuertes lazos con empresas tecnológicas globales.
+      </razon>
+    </mejor_opcion>
+  </intercambio_internacional>
+
+  <autor>
+    <nombre>Alexis Francisco Mendoza Vázquez</nombre>
+    <año>2025</año>
+  </autor>
+  </Intercambios_Alexis>
 
 </intercambios_academicos>
