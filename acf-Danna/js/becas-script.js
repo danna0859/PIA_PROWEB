@@ -93,12 +93,11 @@ function closeModal() {
 function redirectToApplication() {
     // URLs de redirección - MODIFICA ESTAS URLs SEGÚN TUS NECESIDADES
     const scholarshipLinks = {
-        'Beca de alto Promedio en FIME': 'https://www.uanl.mx/becas/excelencia',
-        'Beca de Apoyo Económico': 'https://www.uanl.mx/becas/apoyo',
-        'Beca Benito Juárez': 'https://www.gob.mx/becasbenitojuarez/aplicar',
-        'Jóvenes Escribiendo el Futuro': 'https://www.gob.mx/jovenesconstruyendoelfuturo/aplicar',
-        'Beca Fundación Telmex': 'https://fundaciontelmextelcel.org/becas/aplicar',
-        'Beca Google for Education': 'https://edu.google.com/scholarships/apply'
+        'Beca de Alto Promedio en FIME': 'https://www.fime.uanl.mx/tramites/becas-academicas/',
+        'Beca de Escasos Recursos': 'https://www.uanl.mx/tramites/becas-de-escasos-recursos/',
+        'Beca Benito Juárez': 'https://subes.becasbenitojuarez.gob.mx/',
+        'Beca BBVA': 'https://www.fundacionbbva.mx/convocatoria-becas2025/',
+        'Beca Santander': 'https://app.santanderopenacademy.com/es/program/media-manutencion-2025'
     };
     
     const link = scholarshipLinks[currentScholarship] || 'https://www.uanl.mx/becas';
