@@ -93,7 +93,7 @@
   </intercambio_integrante>
 
   <!-- Información de Danna -->
-  <intercambio_integrante id="2">
+  <Intercambios_DannaPaolaRuizHernandez>
     <informacion_personal>
       <nombre>Danna Paola Ruiz Hernandez</nombre>
       <matricula>20204567</matricula>
@@ -223,7 +223,7 @@
       <nombre>Danna Paola Ruiz Hernandez</nombre>
       <anio>2025</anio>
     </informacion_autor>
-  </intercambio_integrante>
+  </Intercambios_DannaPaolaRuizHernandez>
   
   <Intercambios_Alexis>
   <informacion_general>
