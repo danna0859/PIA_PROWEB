@@ -337,9 +337,14 @@
 
   
 
+  <autor>
+    <nombre>Alexis Francisco Mendoza Vázquez</nombre>
+    <año>2025</año>
+  </autor>
+  </Intercambios_AlexisFranciscoMendozaVázquez>
 
-<!-- Información de Johan -->
-<intercambio_academico>
+  <!-- Información de Johan -->
+<intercambio_JohanEmilioVazquezLuna>
     <informacion_general>
         <nombre>Johan Emilio Vázquez Luna</nombre>
         <matricula>2092470</matricula>
@@ -423,13 +428,4 @@
         <nombre>Johan Emilio Vázquez Luna</nombre>
         <anio>2025</anio>
     </autor>
-</intercambio_academico>
-
-
-  <autor>
-    <nombre>Alexis Francisco Mendoza Vázquez</nombre>
-    <año>2025</año>
-  </autor>
-  </Intercambios_AlexisFranciscoMendozaVázquez>
-
-</intercambios_academicos>
+</intercambio_JohanEmilioVazquezLuna>
