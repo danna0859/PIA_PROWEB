@@ -1,6 +1,3 @@
-/* -------------------------
-   ESTILO GLOBAL
--------------------------- */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,13 +6,11 @@
 
 body {
     font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: #020617; /* casi negro, discreto */
-    color: #e5e7eb;      /* gris muy claro */
+    background: #020617; 
+    color: #e5e7eb;      
 }
 
-/* -------------------------
-   HEADER
--------------------------- */
+
 header {
     text-align: center;
     padding: 28px 16px 22px;
@@ -36,18 +31,14 @@ header p {
     color: #9ca3af;
 }
 
-/* -------------------------
-   MAIN
--------------------------- */
+
 main {
     max-width: 1100px;
     margin: 28px auto 50px;
     padding: 0 16px;
 }
 
-/* -------------------------
-   ALERTA PERSONALIZADA
--------------------------- */
+
 .alerts-section {
     margin-bottom: 24px;
 }
@@ -80,7 +71,7 @@ main {
 .btn-primary {
     align-self: flex-start;
     padding: 10px 18px;
-    background: #0d9488;        /* teal varonil */
+    background: #0d9488;       
     color: #f9fafb;
     border: none;
     border-radius: 999px;
@@ -94,9 +85,7 @@ main {
     background: #0f766e;
 }
 
-/* -------------------------
-   FILTROS
--------------------------- */
+
 .filters-section {
     margin: 20px 0;
     background: #020617;
@@ -137,9 +126,7 @@ main {
     color: #f9fafb;
 }
 
-/* -------------------------
-   SECCIONES DE BECAS
--------------------------- */
+
 .scholarship-section {
     margin-top: 22px;
     background: #020617;
@@ -170,9 +157,7 @@ main {
     font-weight: 600;
 }
 
-/* -------------------------
-   TARJETAS
--------------------------- */
+
 .scholarship-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -242,7 +227,7 @@ main {
     color: #9ca3af;
 }
 
-/* FOOTER DE CADA CARD */
+
 .card-footer {
     display: flex;
     justify-content: space-between;
@@ -282,9 +267,7 @@ main {
     background: #111827;
 }
 
-/* -------------------------
-   FOOTER GENERAL
--------------------------- */
+
 footer {
     text-align: center;
     padding: 20px 12px 30px;
@@ -302,4 +285,85 @@ footer {
 
 .link-back:hover {
     text-decoration: underline;
+}
+
+.scholarship-card img {
+    width: 100%;  
+    height: auto; 
+    max-width: 300px; 
+    margin-bottom: 15px; 
+    border-radius: 8px; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn-back {
+    padding: 10px 20px;
+    background-color: #0d9488;
+    color: #f9fafb;
+    border: none;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: 0.25s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-back:hover {
+    background-color: #0f766e;
+}
+
+.alerts-section {
+    margin-bottom: 24px;
+}
+
+.alert-card {
+    background: #111827;
+    border-radius: 18px;
+    padding: 20px 22px;
+    border: 1px solid #1f2937;
+    box-shadow: 0 18px 40px rgba(15,23,42,0.7);
+}
+
+.alert-card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #f9fafb;
+}
+
+.alert-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#alert-message {
+    font-size: 0.95rem;
+    color: #9ca3af;
+}
+
+.btn-primary {
+    align-self: flex-start;
+    padding: 10px 18px;
+    background: #16a34a;  /* Teal */
+    color: #f9fafb;
+    border: none;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.btn-primary:hover {
+    background: #15803d;
 }

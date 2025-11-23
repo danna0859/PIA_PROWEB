@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Becas disponibles - Johan Emilio Vázquez Luna</title>
     <link rel="stylesheet" href="css/styles2.css">
->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <header>
-        <h1>Becas para estudiantes de FIME</h1>
-        <p>Explora opciones de apoyo económico según tu perfil académico</p>
+        <div class="header-container">
+            <h1>Becas para estudiantes de FIME</h1>
+            <p>Explora opciones de apoyo económico según tu perfil académico</p>
+            
+            <a href="../equipo3_index.html" class="btn-back">Volver al inicio</a>
+        </div>
     </header>
 
     <main>
 
-       
+        
         <section class="alerts-section">
             <div class="alert-card" id="personalized-alert">
-                <h2>📊 Mis becas recomendadas</h2>
+                <h2>📊 ¡Bienvenido al Portal de Becas!</h2>
                 <div class="alert-content">
                     <p id="alert-message">
-                        Ingresa tu promedio y tu situación para ver qué becas se adaptan mejor a ti.
+                        Aquí encontrarás información sobre diversas oportunidades de financiamiento educativo organizadas por sector.
+                        Utiliza los filtros para explorar las becas disponibles.
                     </p>
                     <button class="btn-primary" id="btn-elegibilidad">
                         Verificar elegibilidad
@@ -39,6 +45,7 @@
                 <button class="filter-btn active" data-filter="all">Todas</button>
                 <button class="filter-btn" data-filter="gobierno">Gobierno</button>
                 <button class="filter-btn" data-filter="privado">Sector privado</button>
+                <button class="filter-btn" data-filter="universitaria">Universitaria</button>
             </div>
         </section>
 
@@ -50,14 +57,14 @@
             </div>
 
             <div class="scholarship-cards">
-
-            
+                
                 <article class="scholarship-card" data-id="benito">
                     <div class="card-header">
                         <h3>Beca Benito Juárez Educación Superior</h3>
                         <span class="amount">$2,575 MXN bimestrales</span>
                     </div>
                     <div class="card-body">
+                        <img src="images/beca_benito.jpg" alt="Beca Benito Juárez" class="scholarship-image">
                         <p class="description">
                             Apoyo económico federal para estudiantes de licenciatura en instituciones públicas.
                         </p>
@@ -84,13 +91,14 @@
                     </div>
                 </article>
 
-              
+                
                 <article class="scholarship-card" data-id="jovenes">
                     <div class="card-header">
                         <h3>Jóvenes Escribiendo el Futuro</h3>
                         <span class="amount">$2,575 MXN bimestrales</span>
                     </div>
                     <div class="card-body">
+                        <img src="images/jovenes_escribiendo.png" alt="Jóvenes Escribiendo el Futuro" class="scholarship-image">
                         <p class="description">
                             Beca dirigida a estudiantes que cursan educación superior en contextos de vulnerabilidad.
                         </p>
@@ -116,11 +124,10 @@
                         </a>
                     </div>
                 </article>
-
             </div>
         </section>
 
-       
+        
         <section class="scholarship-section" data-category="privado">
             <div class="section-header">
                 <h2>🏢 Becas del sector privado</h2>
@@ -128,7 +135,6 @@
             </div>
 
             <div class="scholarship-cards">
-
                 
                 <article class="scholarship-card" data-id="becalos">
                     <div class="card-header">
@@ -136,6 +142,7 @@
                         <span class="amount">% de colegiatura + apoyo</span>
                     </div>
                     <div class="card-body">
+                        <img src="images/becalos.jpg" alt="Bécalos - Programas de tecnología" class="scholarship-image">
                         <p class="description">
                             Programa dirigido a estudiantes de ingeniería y tecnologías con buen desempeño académico.
                         </p>
@@ -162,13 +169,14 @@
                     </div>
                 </article>
 
-               
+                
                 <article class="scholarship-card" data-id="fundacion">
                     <div class="card-header">
                         <h3>Fundación Telmex – Educación superior</h3>
                         <span class="amount">Apoyo integral</span>
                     </div>
                     <div class="card-body">
+                        <img src="images/fundacion_telmex.jpg" alt="Fundación Telmex" class="scholarship-image">
                         <p class="description">
                             Beca para estudiantes destacados con participación en proyectos o actividades extracurriculares.
                         </p>
@@ -194,17 +202,93 @@
                         </a>
                     </div>
                 </article>
+            </div>
+        </section>
 
+        
+        <section class="scholarship-section" data-category="universitaria">
+            <div class="section-header">
+                <h2>🎓 Becas Universitarias</h2>
+                <span class="badge">2 becas</span>
+            </div>
+
+            <div class="scholarship-cards">
+                
+                <article class="scholarship-card" data-id="uanl_beca">
+                    <div class="card-header">
+                        <h3>Beca Universidad Autónoma de Nuevo León</h3>
+                        <span class="amount">$2,000 MXN mensuales</span>
+                    </div>
+                    <div class="card-body">
+                        <img src="images/uanl_beca.jpg" alt="Beca UANL" class="scholarship-image">
+                        <p class="description">
+                            Beca dirigida a estudiantes de la UANL para apoyar sus estudios de licenciatura.
+                        </p>
+                        <div class="requirements">
+                            <h4>Requisitos principales:</h4>
+                            <ul>
+                                <li>Estar inscrito en la UANL</li>
+                                <li>Promedio mínimo de 85</li>
+                                <li>No contar con otra beca</li>
+                            </ul>
+                        </div>
+                        <div class="deadline">
+                            <strong>Fecha estimada de registro:</strong> Enero 2025
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-apply" data-scholarship="Beca UANL" data-url="https://www.uanl.mx">
+                            Aplicar
+                        </button>
+                        <a href="https://www.uanl.mx" target="_blank" class="btn-info">
+                            Más información
+                        </a>
+                    </div>
+                </article>
+
+                
+                <article class="scholarship-card" data-id="fime_beca">
+                    <div class="card-header">
+                        <h3>Beca de Alto Promedio FIME</h3>
+                        <span class="amount">$2,000 MXN mensuales</span>
+                    </div>
+                    <div class="card-body">
+                        <img src="images/beca_fime.jpg" alt="Beca FIME" class="scholarship-image">
+                        <p class="description">
+                            Beca otorgada por la Facultad de Ingeniería Mecánica y Eléctrica (FIME) a los estudiantes con un alto rendimiento académico.
+                        </p>
+                        <div class="requirements">
+                            <h4>Requisitos principales:</h4>
+                            <ul>
+                                <li>Ser alumno de FIME (UANL)</li>
+                                <li>Promedio mínimo de 90</li>
+                                <li>No contar con otra beca académica</li>
+                                <li>Haber aprobado todas las materias del semestre anterior</li>
+                            </ul>
+                        </div>
+                        <div class="deadline">
+                            <strong>Fecha estimada de registro:</strong> Marzo 2025
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-apply" data-scholarship="Beca FIME" data-url="https://www.fime.uanl.mx/tramites/becas-academicas/">
+                            Aplicar
+                        </button>
+                        <a href="https://www.fime.uanl.mx/tramites/becas-academicas/" target="_blank" class="btn-info">
+                            Más información
+                        </a>
+                    </div>
+                </article>
             </div>
         </section>
 
     </main>
 
     <footer>
-        <a href="Johanp1.html" class="link-back">Volver a mi perfil</a>
         <p>&copy; 2025 Johan Vázquez. Página de becas.</p>
     </footer>
 
     <script src="js/becas-johan.js"></script>
 </body>
+
 </html>

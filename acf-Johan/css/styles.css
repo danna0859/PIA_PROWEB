@@ -1,6 +1,3 @@
-/* -------------------------
-   ESTILO GLOBAL
--------------------------- */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,13 +6,11 @@
 
 body {
     font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: #f5f6f8; /* Gris muy claro */
-    color: #1f2937; /* Gris oscuro elegante */
+    background: #f5f6f8; 
+    color: #1f2937; 
 }
 
-/* -------------------------
-   HEADER
--------------------------- */
+
 header {
     background: #ffffff;
     padding: 28px 40px;
@@ -45,9 +40,7 @@ header .logo {
     width: auto;
 }
 
-/* -------------------------
-   NAV (MENÚ)
--------------------------- */
+
 nav {
     margin-top: 8px;
     background: #ffffff;
@@ -70,20 +63,18 @@ nav a {
 }
 
 nav a:hover {
-    color: #3b82f6; /* Azul suave */
+    color: #3b82f6; 
     border-color: #3b82f6;
 }
 
-/* -------------------------
-   MAIN
--------------------------- */
+
 main.container {
     max-width: 1100px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
-/* SECCIONES COMO TARJETAS */
+
 section {
     background: #ffffff;
     padding: 36px;
@@ -92,7 +83,7 @@ section {
     box-shadow: 0 10px 30px rgba(0,0,0,0.06);
 }
 
-/* TÍTULOS */
+
 h2 {
     font-size: 1.9rem;
     margin-bottom: 22px;
@@ -111,9 +102,7 @@ h4 {
     color: #111827;
 }
 
-/* -------------------------
-   PERFIL
--------------------------- */
+
 .perfil-card {
     background: #f9fafb;
     border-radius: 20px;
@@ -172,9 +161,7 @@ h4 {
     text-decoration: underline;
 }
 
-/* -------------------------
-   HOBBIES
--------------------------- */
+
 #hobbies {
     margin-top: 20px;
     display: grid;
@@ -198,9 +185,7 @@ h4 {
     margin-bottom: 12px;
 }
 
-/* -------------------------
-   FOOTER
--------------------------- */
+
 footer {
     text-align: center;
     font-size: 0.9rem;

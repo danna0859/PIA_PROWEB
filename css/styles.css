@@ -33,31 +33,31 @@ header p {
     margin: 0 auto;
 }
 
-/* Estilos del contenido principal */
+
 main {
-    max-width: none; /* Extendido al máximo */
+    max-width: none; 
     margin: 0 auto;
-    padding: 40px 10px; /* Padding lateral mínimo para casi al límite */
+    padding: 40px 10px; 
 }
 
-/* Secciones */
+
 #team-info, #team-presentations {
     background-color: white;
-    padding: 15px; /* Reducido para más amplitud */
+    padding: 15px; 
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     margin-bottom: 40px;
-    width: 100%; /* Full width */
+    width: 100%; 
 }
 
 h2 {
     font-size: 1.8rem;
-    color: #1e40af; /* Azul elegante */
+    color: #1e40af; 
     margin-bottom: 20px;
     text-align: center;
 }
 
-/* Estilos de la tabla */
+
 #team-table {
     width: 100%;
     border-collapse: collapse;
@@ -66,11 +66,11 @@ h2 {
 th, td {
     padding: 15px;
     text-align: left;
-    border-bottom: 1px solid #d1d5db; /* Gris medio para bordes */
+    border-bottom: 1px solid #d1d5db; 
 }
 
 th {
-    background-color: #4b5563; /* Gris azulado moderno */
+    background-color: #4b5563; 
     color: white;
     font-weight: 600;
     text-transform: uppercase;
@@ -78,15 +78,15 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: #f9fafb; /* Gris muy claro */
+    background-color: #f9fafb; 
 }
 
 tr:hover {
-    background-color: #dbeafe; /* Azul grisáceo suave para hover */
+    background-color: #dbeafe; 
     transition: background-color 0.3s ease;
 }
 
-/* Estilos de los enlaces */
+
 a {
     color: #3b82f6;
     text-decoration: none;
@@ -99,9 +99,9 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Estilos de los botones */
+
 button {
-    background-color: #1e40af; /* Azul profundo elegante */
+    background-color: #1e40af; 
     color: white;
     border: none;
     padding: 8px 15px;
@@ -115,21 +115,21 @@ button:hover {
     background-color: #1e3a8a;
 }
 
-/* Estilos de la sección de presentaciones */
+
 .presentations-container {
     display: flex;
-    flex-direction: column; /* Vertical por defecto, como lista hacia abajo */
+    flex-direction: column; 
     gap: 20px;
-    align-items: stretch; /* Extiende las cards al ancho completo */
+    align-items: stretch; 
     width: 100%;
 }
 
 .presentation-card {
-    background-color: #f9fafb; /* Gris claro para cards */
+    background-color: #f9fafb; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    width: 100%; /* Full width para extender al límite */
+    width: 100%; 
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -146,7 +146,7 @@ button:hover {
 
 .presentation-card p {
     font-size: 1rem;
-    color: #6b7280; /* Gris medio para texto secundario */
+    color: #6b7280; 
     margin-bottom: 15px;
 }
 
@@ -164,7 +164,7 @@ button:hover {
     text-decoration: none;
 }
 
-/* Estilos del modal (mantenido) */
+
 .modal {
     display: none;
     position: fixed;
@@ -209,10 +209,10 @@ button:hover {
     font-family: 'Courier New', monospace;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     main {
-        padding: 40px 5px; /* Aún más ajustado en móvil */
+        padding: 40px 5px; 
     }
 
     table {
