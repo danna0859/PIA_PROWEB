@@ -54,7 +54,6 @@ section {
     margin: 0 auto;
 }
 
-
 #pw2 {
     background-color: white;
     border-radius: 8px;
@@ -149,4 +148,48 @@ section {
 .perfil-card p {
     margin: 8px 0;
     font-size: 1.05rem;
+}
+
+.icon {
+    margin-right: 8px;
+    color: #2c3e50;
+}
+
+.hobby-item i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+.welcome-alert {
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.link-with-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.hobby-item i {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #1e40af;
+    display: block;
+}
+
+.perfil-card .icon {
+    width: 20px;
+    text-align: center;
+}
+
+h2 .icon, h3 .icon, h4 .icon {
+    color: #1e40af;
 }

@@ -4,129 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Páginas Web 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <script>
+        window.onload = function() {
+            alert("¡Bienvenido a mi CV!");
+        };
+    </script>
+
     <header>
         <img src="images/logo_universidad.png" alt="Logo de la Universidad" class="logo"> 
         <div>
-            <h1>Brayan Alexis Lopez Guzman</h1>
-            <p>Matrícula: 2035619</p>
+            <h1><i class="fas fa-user icon"></i>Brayan Alexis Lopez Guzman</h1>
+            <p><i class="fas fa-id-card icon"></i>Matrícula: 2035619</p>
         </div>
         <img src="images/logo_facultad.png" alt="Logo de la Facultad" class="logo"> 
     </header>
 
     <nav>
-        <a href="Brayanp2.html">Página Web 2</a>
-        <a href="../equipo3_index.html">Volver al Equipo #3</a> 
+        <a href="Brayanp2.html" class="link-with-icon">
+            <i class="fas fa-file-alt icon"></i>Página Web 2
+        </a>
+        <a href="../equipo3_index.html" class="link-with-icon">
+            <i class="fas fa-arrow-left icon"></i>Volver al Equipo #3
+        </a> 
     </nav>
     
     <main class="container">
+        <div class="welcome-alert">
+            <i class="fas fa-hand-wave"></i> ¡Bienvenido a mi CV!
+        </div>
+        
         <section id="perfil">
-           <h2>Mi Perfil Académico</h2>
+           <h2><i class="fas fa-graduation-cap icon"></i>Mi Perfil Académico</h2>
             <div class="perfil-card">
                 <img src="images/mifoto.jpg" alt="Foto de Brayan" class="foto-perfil">
                 <div>
-                    <p><strong>Carrera:</strong> Ingeniería en Sistemas - FIME UANL</p>
-                    <p><strong>Semestre actual:</strong>6 </p>
-                    <p><strong>Monterrey, Nuevo Leon, Mexico</strong></p>
-                    <p><strong>brayanlopk10@hotmail.com</strong></p>
-                    <p><strong>Alumno de la Facultad autonoma de nuevo leon, de la facultad de ingenieria mecanica y electrica</strong></p>
+                    <p><i class="fas fa-book icon"></i><strong>Carrera:</strong> Ingeniería en Sistemas - FIME UANL</p>
+                    <p><i class="fas fa-calendar-alt icon"></i><strong>Semestre actual:</strong>6 </p>
+                    <p><i class="fas fa-map-marker-alt icon"></i><strong>Monterrey, Nuevo Leon, Mexico</strong></p>
+                    <p><i class="fas fa-envelope icon"></i><strong>brayanlopk10@hotmail.com</strong></p>
+                    <p><i class="fas fa-university icon"></i><strong>Alumno de la Facultad autonoma de nuevo leon, de la facultad de ingenieria mecanica y electrica</strong></p>
                 </div>
             </div>
         </section>
 
     <section id="pw1">
-        <h2>Mi Trayectoria Personal y Profesional</h2>
-        
+        <h2><i class="fas fa-road icon"></i>Mi Trayectoria Personal y Profesional</h2>
         
         <div class="trajectory-item">
             <img src="images/imagen_primaria.jpg" alt="Escuela Primaria"> 
             <div>
-                <h3>Escuela Primaria</h3>
-                <p>Nombre de la escuela: Cuauhtemoc Villarreal Cirilo
-                <p>Periodo: 2007-2012 </p>
-                <p>Descripción breve: Aunque no fue mi primera escuela, fue en la que dure mas tiempo</p>
-                <a href="https://escuelasmex.com/directorio/19DPR1398Z/cuauhtemoc-villarreal-cirilo" target="_blank">Página de la Primaria</a>
+                <h3><i class="fas fa-school icon"></i>Escuela Primaria</h3>
+                <p><i class="fas fa-signature icon"></i>Nombre de la escuela: Cuauhtemoc Villarreal Cirilo</p>
+                <p><i class="fas fa-calendar icon"></i>Periodo: 2007-2012 </p>
+                <p><i class="fas fa-info-circle icon"></i>Descripción breve: Aunque no fue mi primera escuela, fue en la que dure mas tiempo</p>
+                <a href="https://escuelasmex.com/directorio/19DPR1398Z/cuauhtemoc-villarreal-cirilo" target="_blank">
+                    <i class="fas fa-external-link-alt icon"></i>Página de la Primaria
+                </a>
             </div>
         </div>
-        
         
         <div class="trajectory-item">
             <img src="images/imagen_secundaria.jpg" alt="Escuela Secundaria"> 
             <div>
-                <h3>Escuela Secundaria</h3>
-                <p>Nombre de la escuela: Escuela secundaria no. 68</p>
-                <p>Periodo: 2012-2016</p>
-                <p>Descripción breve: Aqui pase los 3 años enteros, sin cambios</p>
-                <a href="https://escuelasmex.com/directorio/19DES0067W/secundaria-num-68-nuevo-leon" target="_blank">Página de la Secundaria</a>
+                <h3><i class="fas fa-school icon"></i>Escuela Secundaria</h3>
+                <p><i class="fas fa-signature icon"></i>Nombre de la escuela: Escuela secundaria no. 68</p>
+                <p><i class="fas fa-calendar icon"></i>Periodo: 2012-2016</p>
+                <p><i class="fas fa-info-circle icon"></i>Descripción breve: Aqui pase los 3 años enteros, sin cambios</p>
+                <a href="https://escuelasmex.com/directorio/19DES0067W/secundaria-num-68-nuevo-leon" target="_blank">
+                    <i class="fas fa-external-link-alt icon"></i>Página de la Secundaria
+                </a>
             </div>
         </div>
         
         <div class="trajectory-item">
             <img src="images/imagen_preparatoria.jpg" alt="Preparatoria"> 
             <div>
-                <h3>Preparatoria</h3>
-                <p>Nombre de la escuela: Preparatoria tecnica general Emiliano Zapata</p>
-                <p>Periodo: 2016-2019 </p>
-                <p>Descripción breve: En esta preparatoria lleve exitosamente mis 3 años como tecnico y a su vez forme parte de un equipo de robotica dentro de esta</p>
-                <a href="https://preparatoriaemilianozapata.edu.mx/" target="_blank">Página de la Preparatoria</a>
+                <h3><i class="fas fa-university icon"></i>Preparatoria</h3>
+                <p><i class="fas fa-signature icon"></i>Nombre de la escuela: Preparatoria tecnica general Emiliano Zapata</p>
+                <p><i class="fas fa-calendar icon"></i>Periodo: 2016-2019 </p>
+                <p><i class="fas fa-info-circle icon"></i>Descripción breve: En esta preparatoria lleve exitosamente mis 3 años como tecnico y a su vez forme parte de un equipo de robotica dentro de esta</p>
+                <a href="https://preparatoriaemilianozapata.edu.mx/" target="_blank">
+                    <i class="fas fa-external-link-alt icon"></i>Página de la Preparatoria
+                </a>
             </div>
         </div>
         
-        <h3>Mis Trabajos</h3>
+        <h3><i class="fas fa-briefcase icon"></i>Mis Trabajos</h3>
         
         <div class="trajectory-item">
             <img src="images/imagen_trabajo1.jpg" alt="Trabajo 1"> 
             <div>
-                <h4>Trabajo 1: Plomeria</h4>
-                <p>Periodo: 2018 - 2020 </p>
-                <p>Descripción: Trabaje informalmente e informalmente en la plomeria esas fechas, ya sea instalando pvc y cpvc en HEB, prolect, casa habitacion, etc.</p>
+                <h4><i class="fas fa-wrench icon"></i>Trabajo 1: Plomeria</h4>
+                <p><i class="fas fa-calendar icon"></i>Periodo: 2018 - 2020 </p>
+                <p><i class="fas fa-info-circle icon"></i>Descripción: Trabaje informalmente e informalmente en la plomeria esas fechas, ya sea instalando pvc y cpvc en HEB, prolect, casa habitacion, etc.</p>
             </div>
         </div>
         
         <div class="trajectory-item">
             <img src="images/imagen_trabajo2.jpg" alt="Trabajo 2"> 
             <div>
-                <h4>Trabajo 2: Instalador de camaras</h4>
-                <p>Periodo: 2021 </p>
-                <p>Descripción: En este trabajo era tecnico instalador de camaras y dure un año</p>
+                <h4><i class="fas fa-camera icon"></i>Trabajo 2: Instalador de camaras</h4>
+                <p><i class="fas fa-calendar icon"></i>Periodo: 2021 </p>
+                <p><i class="fas fa-info-circle icon"></i>Descripción: En este trabajo era tecnico instalador de camaras y dure un año</p>
             </div>
         </div>
         
         <div class="trajectory-item">
             <img src="images/imagen_trabajo3.jpg" alt="Trabajo 3"> 
             <div>
-                <h4>Trabajo 3: Sushi y asi</h4>
-                <p>Periodo: 2022 - 2023 </p>
-                <p>Descripción: En este trabajo era cocinero y dure un año</p>
+                <h4><i class="fas fa-utensils icon"></i>Trabajo 3: Sushi y asi</h4>
+                <p><i class="fas fa-calendar icon"></i>Periodo: 2022 - 2023 </p>
+                <p><i class="fas fa-info-circle icon"></i>Descripción: En este trabajo era cocinero y dure un año</p>
             </div>
         </div>
         
         <div class="trajectory-item">
             <img src="images/imagen_trabajo4.jpg" alt="Trabajo 4"> 
             <div>
-                <h4>Trabajo 4: Felino boneless </h4>
-                <p>Periodo: 2023 -2025</p>
-                <p>Descripción: Trabajo de medio turno, con horarios variados</p>
+                <h4><i class="fas fa-hamburger icon"></i>Trabajo 4: Felino boneless </h4>
+                <p><i class="fas fa-calendar icon"></i>Periodo: 2023 -2025</p>
+                <p><i class="fas fa-info-circle icon"></i>Descripción: Trabajo de medio turno, con horarios variados</p>
             </div>
         </div>
         
-      
-        <h3>Mis Hobbies</h3>
+        <h3><i class="fas fa-heart icon"></i>Mis Hobbies</h3>
         <div id="hobbies">
             <div class="hobby-item">
-                <img src="images/imagen_hobby1.jpg" alt="Hobby 1"> 
+                <i class="fas fa-book"></i>
                 <p>Me gusta leer, leo cuanto puedo y cuando puedo. La caza del carnero salvaje es mi libro favorito</p>
             </div>
             <div class="hobby-item">
-                <img src="images/imagen_hobby2.jpg" alt="Hobby 2"> 
+                <i class="fas fa-gamepad"></i>
                 <p>Cuando puedo juego, unos ejemplos son: league of legends, arc raiders, fallout, disco elysium</p>
             </div>
         </div>
     </section>
     <footer>
-        <p>&copy; 2025 Brayan Lopez. Todos los derechos reservados.</p>
+        <p><i class="far fa-copyright icon"></i> 2025 Brayan Lopez. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
