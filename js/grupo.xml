@@ -2,7 +2,7 @@
 <intercambios_academicos>
   
   <!-- Información de Brayan -->
-  <intercambio_integrante id="1">
+  <Intercambios_BrayanLópezGuzmán>
     <informacion_personal>
       <nombre>Brayan López Guzmán</nombre>
       <matricula>20204567</matricula>
@@ -90,7 +90,7 @@
       <nombre>Brayan López Guzmán</nombre>
       <anio>2025</anio>
     </informacion_autor>
-  </intercambio_integrante>
+  </Intercambios_BrayanLópezGuzmán>
 
   <!-- Información de Danna -->
   <Intercambios_DannaPaolaRuizHernandez>
